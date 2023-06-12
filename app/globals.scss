@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Tablet (xs)  */
+@media only screen and (min-width: 280px) {
+  .innerDiv {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header .innerDiv {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+/* Tablet (sm)  */
+@media only screen and (min-width: 640px) {
+  .innerDiv {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header .innerDiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Tablet (md)  */
+@media only screen and (min-width: 768px) {
+  .innerDiv {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header .innerDiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* Desktop (lg) */
+@media only screen and (min-width: 1024px) {
+  .overflow-y-scroll {
+    height: 100vh !important;
+  }
+  .innerDiv {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  header .innerDiv {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Desktop (xl)  */
+@media only screen and (min-width: 1280px) {
+  .innerDiv {
+    max-width: calc(1280px + 160px);
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  header .innerDiv {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Desktop (2xl)  */
+@media only screen and (min-width: 1536px) {
+  .innerDiv {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .innerDiv {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* Max Width 2560px */
+main,
+header,
+footer {
+  max-width: 2560px;
+  margin: 0 auto;
+}
+
+// Eduverse GLitch
+
+.glitch {
+  color: #f9a81b;
+  // font-size:100px;
+  position: relative;
+  // width:400px;
+  margin: 0 auto;
+}
+@keyframes noise-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+#custom-video .full-screen-video {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  background: #202020;
+}
+
+#custom-video #closeBtn {
+  display: none;
+}
+#custom-video .full-screen-video #closeBtn {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  display: block;
+  z-index: 9999999;
+}
+
+#custom-video .full-screen-video #closeBtn button {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: #202020;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+#custom-video .full-screen-video video {
+  -o-object-fit: contain !important;
+  object-fit: contain !important;
+  width: 100%;
+  height: 100%;
+}
+
+#custom-video .full-screen-video .text,
+#custom-video .full-screen-video .mute {
+  display: none;
+}
+
+.bg-video {
+  object-fit: cover;
+}
+.effect-code {
+  transition: all 0.5s ease-out;
+}
+
+@media (min-height: 800px) {
+  #custom-video {
+    height: 700px !important;
+  }
+  .video-container {
+    height: 700px !important;
+  }
+  .hero-video {
+    height: 700px !important;
+  }
+}
+
+@media (min-width: 1280px) and (min-height: 800px) {
+  #custom-video {
+    height: 800px !important;
+  }
+  .video-container {
+    height: 800px !important;
+  }
+  .hero-video {
+    height: 800px !important;
+  }
+}
