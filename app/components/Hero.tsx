@@ -6,9 +6,7 @@ import { PlayIcon, SpeakerWaveIcon as SpeakerIcon, SpeakerXMarkIcon as MuteIcon,
 
 const Hero: NextComponentType = () => {
   const [isFullScreen, setFullScreen] = useState(false);
-  const [isMute, setMute] = useState(true);
-  const [data, setData] = useState([]);
-  const [toggleDrowdown, setToggleDrowdown] = useState(false);
+  const [isMute, setMute] = useState(false);
 
   return (
     <section id="custom-video" className="relative after:absolute sm:h-auto h-[100vh] after:inset-0 after:bg-[rgba(0,0,0,.8)]">
