@@ -20,7 +20,7 @@ const Navbar: NextComponentType = () => {
         <div className="innerDiv mx-auto">
           <nav className="flex justify-between lg:items-center">
             <a className="inline-block py-4">
-              <Image src={UnicusLogo} alt="" className="object-cover w-[55px] h-[65px] md:w-[70px] md:h-[80px]" />
+              <Image src={UnicusLogo} alt="" className="object-cover w-[50px] h-[60px] md:w-[60px] md:h-[65px]" />
             </a>
             <div className="inline-flex items-center">
               <div className="lg:block hidden">
@@ -39,7 +39,7 @@ const Navbar: NextComponentType = () => {
                   setShowMenu(!showMenu);
                 }}
               >
-                <MenuIcon className="w-[24px] text-white" />
+                <MenuIcon className="w-[27px] text-white" />
               </a>
             </div>
           </nav>

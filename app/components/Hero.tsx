@@ -1,12 +1,18 @@
 'use client'
 import { NextComponentType } from "next"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { PlayIcon, SpeakerWaveIcon as SpeakerIcon, SpeakerXMarkIcon as MuteIcon, XMarkIcon as CloseIcon, ArrowLongRightIcon as ArrowRightIcon } from "@heroicons/react/24/solid"
 
 const Hero: NextComponentType = () => {
   const [isFullScreen, setFullScreen] = useState(false);
-  const [isMute, setMute] = useState(false);
+  const [isMute, setMute] = useState(true);
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setMute(false)
+  //   }, 2000)
+  // }, [])
 
   return (
     <section id="custom-video" className="relative after:absolute sm:h-auto h-[100vh] after:inset-0 after:bg-[rgba(0,0,0,.8)]">
@@ -15,13 +21,13 @@ const Hero: NextComponentType = () => {
           <button
             onClick={() => {
               setFullScreen(!isFullScreen);
-              setMute(!isMute);
+              // setMute(!isMute);
             }}
           >
-            <CloseIcon className="w-8" />
+            <CloseIcon className="w-7 mx-auto" />
           </button>
         </div>
-        <video className="hero-video w-full xl:h-auto lg:h-[800px] md:h-[700px] h-[100vh] object-cover" autoPlay loop muted={isMute ? true : false} controls={isFullScreen ? true : false}>
+        <video id="heroVideo" className="hero-video w-full xl:h-auto lg:h-[800px] md:h-[700px] h-[100vh] object-cover" autoPlay loop muted={isMute ? true : false} controls={isFullScreen ? true : false}>
           <source src="intro.mp4" type="video/mp4" />
         </video>
 
@@ -48,7 +54,7 @@ const Hero: NextComponentType = () => {
                   <button
                     onClick={() => {
                       setFullScreen(!isFullScreen);
-                      setMute(!isMute);
+                      // setMute(!isMute);
                     }}
                     id="playBtn"
                     className="w-[60px] h-[60px] border-2 border-white rounded-full text-white text-[24px]"
@@ -56,9 +62,9 @@ const Hero: NextComponentType = () => {
                     <PlayIcon className="h-8 w-8 mx-auto" />
                   </button>
                 </div> */}
-                {/* <div onClick={() => setMute(!isMute)} className="mute cursor-pointer absolute bottom-0 sm:right-[5%] right-[5px] z-[202]" id="muteBtn">
-                  {isMute ? <MuteIcon className="h-10 w-10" /> : <SpeakerIcon className="h-10 w-10 text-white" />}
-                </div> */}
+                <div onClick={() => setMute(!isMute)} className="mute cursor-pointer absolute -bottom-24 md:bottom-0 sm:right-[5%] right-[5px] z-[202]" id="muteBtn">
+                  {isMute ? <MuteIcon className="w-8 md:w-9 text-white" /> : <SpeakerIcon className="w-8 md:w-9 text-white" />}
+                </div>
               </div>
             </div>
           </div>
