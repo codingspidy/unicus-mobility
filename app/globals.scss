@@ -237,3 +237,25 @@ footer {
     height: 800px !important;
   }
 }
+
+
+#costCalculator {
+  input[type=range]::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    background: url('./images/location-dot.svg') center center no-repeat;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -28px;
+  }
+
+  @media (min-width: 767px) {
+    input[type=range]::-webkit-slider-thumb {
+      height: 40px;
+      width: 40px;
+      margin-top: -35px;
+    }
+  }
+}
