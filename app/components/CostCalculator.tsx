@@ -50,7 +50,7 @@ const CostCalculator: NextComponentType = () => {
                     </div>
                 </div>
                 <div className='w-full mt-3'>
-                    <label htmlFor="distance-range" className="block mb-4 md:mb-5 text-[18px] md:text-[22px] float-right w-full font-[600]">Daily usage {cost} km(s)</label>
+                    <label htmlFor="distance-range" className="block mb-4 md:mb-6 text-[18px] md:text-[22px] w-full font-[600]">Daily usage {cost} km(s)</label>
                     <input id="distance-range" onChange={(e) => setCost(e.target.value)} type="range" min={1} max={200} value={cost} className="w-full h-[6px] md:h-2 bg-secondary accent-primary rounded-lg appearance-none cursor-pointer" />
                 </div>
             </div>
