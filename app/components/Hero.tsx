@@ -31,7 +31,7 @@ const Hero: NextComponentType = () => {
           <source src="intro.mp4" type="video/mp4" />
         </video>
 
-        <div className={`heroText-container absolute inset-0 pt-[200px] pb-[140px] sm:pt-[180px] sm:pb-[180px] lg:pt-[200px] lg:pb-[200px] ${isFullScreen ? "relative" : ""}`}>
+        <div className={`heroText-container absolute inset-0 pt-[200px] sm:pt-[180px] lg:pt-[250px] ${isFullScreen ? "relative" : ""}`}>
           <div className="innerDiv mx-auto">
             <div className="flex justify-start relative z-[9] items-center">
               <div className="w-full">
