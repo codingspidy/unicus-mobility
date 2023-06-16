@@ -250,7 +250,7 @@ footer {
     -webkit-appearance: none;
     margin-top: -37px;
     position: relative;
-    z-index: 100;
+    z-index: 50;
   }
 
   @media (min-width: 767px) {
@@ -263,7 +263,7 @@ footer {
 }
 
 #product {
-  background: #0f0c29;  /* fallback for old browsers */
+  background: #130f26;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #000000, #130f26, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #000000, #130f26, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -275,4 +275,10 @@ background: linear-gradient(to bottom, #000000, #130f26, #000000); /* W3C, IE 10
   padding: 16px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
+}
+
+#footer {
+  background: #130f26;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #000000, #130f26, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #000000, #130f26, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }

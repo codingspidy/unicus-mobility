@@ -14,7 +14,7 @@ const CostCalculator: NextComponentType = () => {
     }
 
     return (
-        <section id="costCalculator" className='py-[60px]'>
+        <section id="costCalculator" className='py-[100px]'>
             <div className='innerDiv mx-auto'>
                 <div className="flex flex-col md:flex-row md:items-baseline md:gap-x-[7px] mb-12">
                     <h3 className="text-[18px] md:text-[24px] font-[500]">Daily Cost</h3>

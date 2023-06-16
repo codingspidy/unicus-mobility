@@ -8,11 +8,11 @@ import RupeeImg from "../images/rupee.svg"
 
 const ProductView = () => {
     return (
-        <section id="product" className='py-[60px] bg-black relative'>
+        <section id="product" className='pt-[120px] pb-[120px] bg-black relative'>
             <div className="absolute -top-[75px] z-[10] inset-x-0 w-full h-20 bg-gradient-to-t from-black to-transparent" />
             <div className='innerDiv mx-auto'>
-                <div className="flex flex-col items-center w-full h-screen justify-center max-w-[500px] mx-auto">
-                    <Image src={BulletImg} width={631} height={395} alt="" />
+                <div className="flex flex-col items-center w-full justify-center max-w-[600px] mx-auto">
+                    <Image src={BulletImg} width={631} height={395} alt="" className="" />
                     <div className="text-white flex flex-wrap md:flex-nowrap justify-center items-center gap-3 mt-6">
                         <div className="specs-card min-w-[150px] md:w-[200px] flex items-center gap-4">
                             <Image src={SpeedImg} alt="" width={16} height={16} className="w-5 md:w-6" />
