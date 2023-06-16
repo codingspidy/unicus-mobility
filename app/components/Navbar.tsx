@@ -16,7 +16,7 @@ const Navbar: NextComponentType = () => {
   }, []);
   return (
     <>
-      <header className={scroll ? "fixed w-full top-0 z-[99] bg-black transition-all ease-in-out" : "fixed w-full top-0 z-[99] transition-all ease-in-out"}>
+      <header id="navbar" className={scroll ? "fixed w-full top-0 z-[99] bg-black transition-all ease-in-out" : "fixed w-full top-0 z-[99] transition-all ease-in-out"}>
         <div className="innerDiv mx-auto">
           <nav className="flex justify-between lg:items-center">
             <a className="inline-block py-4">

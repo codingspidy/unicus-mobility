@@ -30,7 +30,7 @@ export default function Footer() {
                                     src={FacebookLogo}
                                     width={18}
                                     height={18}
-                                    className="w-4 md:w-5"
+                                    className="w-3 md:w-5"
                                 />
                             </Link>
                             <Link href="">
@@ -39,7 +39,7 @@ export default function Footer() {
                                     src={TwitterLogo}
                                     width={18}
                                     height={18}
-                                    className="w-6 md:w-7"
+                                    className="w-5 md:w-7"
                                 />
                             </Link>
                             <Link href="">
@@ -48,7 +48,7 @@ export default function Footer() {
                                     src={YoutubeLogo}
                                     width={18}
                                     height={18}
-                                    className="w-6 md:w-7"
+                                    className="w-5 md:w-7"
                                 />
                             </Link>
                             <Link href="">
@@ -57,7 +57,7 @@ export default function Footer() {
                                     src={InstagramLogo}
                                     width={18}
                                     height={18}
-                                    className="w-6 md:w-7"
+                                    className="w-5 md:w-7"
                                 />
                             </Link>
                             <Link href="">
@@ -66,7 +66,7 @@ export default function Footer() {
                                     src={LinkedinLogo}
                                     width={18}
                                     height={18}
-                                    className="w-6 md:w-7"
+                                    className="w-5 md:w-7"
                                 />
                             </Link>
                         </div>
@@ -74,31 +74,39 @@ export default function Footer() {
                     </div>
                     <div className="md:-order-10 md:w-1/2 md:pr-10 md:pt-[90px] mt-4 md:border-t border-white">
                         <p>
-                            Make a Difference is a registered society under the Travancore
-                            Cochin Literary, Scientific and Charitable Societies Registration
-                            Act, 1955. We are a 12A registered society with section 80(G)
-                            status of income tax act and we are eligible to receive foreign
-                            funding via the Foreign Contribution (Regulation) Act. Our
-                            financial records are audited annually by G. Joseph & Associates.
+                            Unicus Mobility is a startup venture that intends to improve people&#39;s
+                            access to efficient, eco-friendly, and technologically advanced mobility
+                            solutions. We are on a mission to revolutionize the world of transportation
+                            with cutting-edge electric vehicles that blend brains, brawn, and
+                            sustainability.
                         </p>
-                        <p className="mt-4 md:mt-6">
+                        {/* <p className="mt-4 md:mt-6">
                             MAD follows all financial regulations set forth for non-profits by
                             the Government of India, and is audited annually.
-                            </p>
-                             </div>
+                        </p> */}
+                        <ul className="mt-10 space-y-3">
+                            <li className="text-xl font-bold">Contact Us</li>
+                            <li>unicusmobility@gmail.com</li>
+                            <li>+91 9718122534</li>
+                        </ul>
+                    </div>
                     <div className="md:w-1/2 md:text-right md:pt-[90px] mt-10 md:mt-4 md:border-t border-white">
                         <ul className="space-y-4">
                             <li>Privacy Policy</li>
                             <li>Terms & Conditions</li>
-                            <li className="text-xl font-bold">Contact Us</li>
-                            <li>contact@makeadiff.in</li>
-                            <li>+91 93930 93030</li>
+                            <li>Cancellation & Redund Policies</li>
+                            <li>FAQs</li>
+                            {/* <li className="text-xl font-bold">Contact Us</li>
+                            <li>unicusmobility@gmail.com</li>
+                            <li>+91 9718122534</li> */}
                         </ul>
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center footer-links mt-20 md:mt-10 text-xs md:text-sm">
-                    <div className="px-2 py-4">💛 2023 | Unicus Mobility</div>
+                <div className="flex flex-col gap-y-1 items-center footer-links mt-20 md:mt-10 text-[10px] md:text-xs">
+                    <div className="">Unicus Mobility Pvt. Ltd., New Delhi, India</div>
+                    <div className="text-base md:text-lg font-[600]">Proudly curated with⚡in India</div>
+                    <div>©2023 All Rights Reserved</div>
                 </div>
             </div>
         </footer>
