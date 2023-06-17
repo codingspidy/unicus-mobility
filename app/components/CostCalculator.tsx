@@ -24,8 +24,8 @@ const CostCalculator: NextComponentType = () => {
                     <div className="flex flex-col w-1/2 md:w-auto">
                         <Image src={BikeImg} alt="" width={60} height={60} className="object-cover w-[50px] h-[50px] md:w-[70px] md:h-[70px]" />
                         <h5 className="font-[800] mt-3">Unicus e-bike</h5>
-                        <div className='text-[28px] md:text-[42px] font-[800] -mt-1 md:w-[220px]'>
-                            <span className="text-[#61BA89] text-[34px] md:text-[54px]">₹</span>
+                        <div className='text-[28px] flex items-baseline md:text-[42px] font-[800] -mt-1 md:w-[220px]'>
+                            <span className="block text-[#61BA89] text-[34px] md:text-[54px]">₹</span>
                             <span className='text-[#61BA89]'>{calculateCost(0.2)}</span>
                             <span className="text-xs text-[#61BA89]">/day</span>
                         </div>
@@ -33,8 +33,8 @@ const CostCalculator: NextComponentType = () => {
                     <div className="flex flex-col w-1/2 md:w-auto">
                         <Image src={ScootyImg} alt="" width={60} height={60} className="object-cover w-[50px] h-[50px] md:w-[70px] md:h-[70px]" />
                         <h5 className="font-[800] mt-3 whitespace-nowrap">Petrol Bike/ Scooty</h5>
-                        <div className='text-[28px] md:text-[42px] font-[800] -mt-1 md:w-[220px]'>
-                            <span className="text-[#EB003F] text-[34px] md:text-[54px]">₹</span>
+                        <div className='text-[28px] flex items-baseline md:text-[42px] font-[800] -mt-1 md:w-[220px]'>
+                            <span className="block text-[#EB003F] text-[34px] md:text-[54px]">₹</span>
                             <span className='text-[#EB003F]'>{calculateCost(2.1)}</span>
                             <span className="text-xs text-[#EB003F]">/day</span>
                         </div>
@@ -42,8 +42,8 @@ const CostCalculator: NextComponentType = () => {
                     <div className="hidden md:flex flex-col">
                         <Image src={CarImg} alt="" width={60} height={60} className="object-cover w-[50px] h-[50px] md:w-[70px] md:h-[70px] -mb-4" />
                         <h5 className="font-[800] mt-3">Car</h5>
-                        <div className='text-[28px] md:text-[42px] font-[800] -mt-1 md:w-[220px]'>
-                            <span className="text-[#EB003F] text-[42px] md:text-[54px]">₹</span>
+                        <div className='text-[28px] flex items-baseline md:text-[42px] font-[800] -mt-1 md:w-[220px]'>
+                            <span className="block text-[#EB003F] text-[42px] md:text-[54px]">₹</span>
                             <span className="text-[#EB003F]">{calculateCost(3.1)}</span>
                             <span className="text-xs text-[#EB003F]">/day</span>
                         </div>

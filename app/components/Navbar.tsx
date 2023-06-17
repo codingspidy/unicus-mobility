@@ -46,14 +46,14 @@ const Navbar: NextComponentType = () => {
         </div>
       </header>
 
-      <div className={showMenu ? "bg-black fixed effect-code inset-0 w-full sm:h-full h-screen z-[9999] translate-y-0 py-8 sm:overflow-y-visible overflow-y-scroll" : "bg-black py-8 fixed inset-0 w-full sm:h-full h-screen z-[9999] effect-code translate-y-[10000px] sm:overflow-y-visible overflow-y-scroll"}>
+      <div className={`mobile-menu bg-black transform transition-transform duration-300 ease-in-out ${showMenu ? " fixed effect-code inset-0 w-full sm:h-full h-screen z-[9999] translate-x-0 py-8 sm:overflow-y-visible overflow-y-scroll" : "py-8 fixed inset-0 w-full sm:h-full h-screen z-[9999] effect-code translate-x-full sm:overflow-y-visible overflow-y-scroll"}`}>
         <a
-          className="cursor-pointer text-white absolute top-4 right-4"
+          className="cursor-pointer text-white absolute top-5 right-4"
           onClick={() => {
             setShowMenu(!showMenu);
           }}
         >
-          <CloseIcon className="w-10 h-10" />
+          <CloseIcon className="w-8" />
         </a>
 
         <ul className="min-h-[80%] flex flex-col justify-center items-center gap-y-5 text-[22px] text-white">
