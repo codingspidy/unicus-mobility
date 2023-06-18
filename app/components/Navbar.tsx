@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Bars3Icon as MenuIcon, XMarkIcon as CloseIcon } from "@heroicons/react/24/solid"
-import UnicusLogo from "../images/unicus-logo.webp"
+import UnicusLogo from "../images/unicus-logo.png"
 
 const Navbar: NextComponentType = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,7 +20,7 @@ const Navbar: NextComponentType = () => {
         <div className="innerDiv mx-auto">
           <nav className="flex justify-between lg:items-center">
             <a className="inline-block py-4">
-              <Image src={UnicusLogo} alt="" className="object-cover w-[45px] h-[50px] md:w-[60px] md:h-[65px]" />
+              <Image src={UnicusLogo} alt="" width={1116} height={1118} className="object-cover w-[45px] md:w-[60px]" />
             </a>
             <div className="inline-flex items-center">
               <div className="lg:block hidden">
