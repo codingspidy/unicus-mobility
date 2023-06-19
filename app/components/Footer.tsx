@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import UnicusLogo from "../images/unicus-logo.webp"
+import UnicusLogo from "../images/unicus-logo.png"
 import FacebookLogo from "../images/facebook.svg"
 import InstagramLogo from "../images/instagram.svg"
 import TwitterLogo from "../images/twitter.svg"

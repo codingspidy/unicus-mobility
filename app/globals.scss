@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -25,7 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Tablet (xs)  */
 @media only screen and (min-width: 280px) {
   .innerDiv {
     padding-left: 20px;
@@ -36,8 +21,6 @@ body {
     padding-bottom: 2px;
   }
 }
-
-/* Tablet (sm)  */
 @media only screen and (min-width: 640px) {
   .innerDiv {
     padding-left: 60px;
@@ -48,8 +31,6 @@ body {
     padding-bottom: 10px;
   }
 }
-
-/* Tablet (md)  */
 @media only screen and (min-width: 768px) {
   .innerDiv {
     padding-left: 60px;
@@ -60,8 +41,6 @@ body {
     padding-bottom: 10px;
   }
 }
-
-/* Desktop (lg) */
 @media only screen and (min-width: 1024px) {
   .overflow-y-scroll {
     height: 100vh !important;
@@ -75,8 +54,6 @@ body {
     padding-bottom: 0;
   }
 }
-
-/* Desktop (xl)  */
 @media only screen and (min-width: 1280px) {
   .innerDiv {
     max-width: calc(1280px + 160px);
@@ -89,8 +66,6 @@ body {
     padding-bottom: 0;
   }
 }
-
-/* Desktop (2xl)  */
 @media only screen and (min-width: 1536px) {
   .innerDiv {
     max-width: 1280px;
@@ -103,16 +78,12 @@ body {
     padding-bottom: 0;
   }
 }
-
-/* Max Width 2560px */
 main,
 header,
 footer {
   max-width: 2560px;
   margin: 0 auto;
 }
-
-// Eduverse GLitch
 
 .glitch {
   color: #40b93c;
@@ -141,7 +112,6 @@ footer {
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
-
 @keyframes noise-anim-2 {
   $steps: 20;
   @for $i from 0 through $steps {
@@ -173,7 +143,6 @@ footer {
   position: fixed;
   background: #202020;
 }
-
 #custom-video #closeBtn {
   display: none;
 }
@@ -184,7 +153,6 @@ footer {
   display: block;
   z-index: 9999999;
 }
-
 #custom-video .full-screen-video #closeBtn button {
   background: rgba(255, 255, 255, 0.8);
   border: none;
@@ -194,7 +162,6 @@ footer {
   border-radius: 50%;
   font-size: 20px;
 }
-
 #custom-video .full-screen-video video {
   -o-object-fit: contain !important;
   object-fit: contain !important;
@@ -206,14 +173,12 @@ footer {
 #custom-video .full-screen-video .mute {
   display: none;
 }
-
 .bg-video {
   object-fit: cover;
 }
 .effect-code {
   transition: all 0.5s ease-out;
 }
-
 @media (min-height: 700px) {
   #custom-video {
     height: 700px !important;
@@ -225,7 +190,6 @@ footer {
     height: 700px !important;
   }
 }
-
 @media (min-width: 1280px) and (min-height: 800px) {
   #custom-video {
     height: 800px !important;
@@ -251,7 +215,6 @@ footer {
     position: relative;
     z-index: 50;
   }
-
   @media (min-width: 767px) {
     input[type="range"]::-webkit-slider-thumb {
       height: 50px;
@@ -262,20 +225,19 @@ footer {
 }
 
 #product {
-  background: #000c38; /* fallback for old browsers */
+  background: #010A26; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
     #000000,
-    #000c38,
+    #010A26,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
     #000000,
-    #000c38,
+    #010A26,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   .specs-card {
     background: rgba(19, 15, 38, 0.25);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -288,20 +250,17 @@ footer {
 }
 
 #footer {
-  background: #000c38; /* fallback for old browsers */
+  background: #010A26; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
     #000000,
-    #000c38,
+    #010A26,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
     #000000,
-    #000c38,
+    #010A26,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.mobile-menu {
 }

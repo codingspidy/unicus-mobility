@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import BulletImg from '../images/bullet.png'
+import UnicusBikeImg from '../images/unicus-bike.png'
 import BatteryImg from "../images/battery.svg"
 import SpeedImg from "../images/speed.svg"
 import MapImg from "../images/map.svg"
@@ -12,8 +12,8 @@ const ProductView = () => {
             <div className="absolute -top-[75px] z-[10] inset-x-0 w-full h-20 bg-gradient-to-t from-black to-transparent" />
             <div className='innerDiv mx-auto'>
                 <div className="flex flex-col items-center w-full justify-center max-w-[600px] mx-auto">
-                    <Image src={BulletImg} width={631} height={395} alt="" className="" />
-                    <div className="text-white flex flex-wrap md:flex-nowrap justify-center items-center gap-3 mt-6">
+                    <Image src={UnicusBikeImg} width={631} height={395} alt="" className="" />
+                    <div className="text-white flex flex-wrap lg:flex-nowrap justify-center items-center gap-3 mt-6">
                         <div className="specs-card min-w-[150px] md:w-[200px] flex items-center gap-4">
                             <Image src={SpeedImg} alt="" width={16} height={16} className="w-5 md:w-6" />
                             <div className='flex flex-col'>
