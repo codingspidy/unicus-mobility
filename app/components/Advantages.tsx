@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const Advantages = () => {
     return (
-        <section id="costCalculator" className='pt-[70px] pb-[140px] bg-[#d2fba4]'>
+        <section id="costCalculator" className='pt-[70px] pb-[140px] bg-[#f2f2f2]'>
             <div className='innerDiv mx-auto'>
                 <h3 className="text-[30px] md:text-[40px] font-[600] text-center">Support the <span className="text-secondary">Cause</span>, Choose <span className="text-secondary">Electric</span></h3>
                 <div className="flex items-baseline justify-center mt-12 gap-x-4 md:gap-x-5 gap-y-7 flex-wrap max-w-screen-md mx-auto">
