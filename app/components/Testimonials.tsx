@@ -45,7 +45,7 @@ export default function TestimonialsSlider() {
     return (
         <section className='pt-[30px] pb-[70px] bg-[#f2f2f2]'>
             <div className='innerDiv mx-auto'>
-                <h3 className="text-[30px] md:text-[40px] text-primary font-[600] leading-normal text-center max-w-[600px] mx-auto mb-12">Here&#39;s what our bikers are saying about us</h3>
+                <h3 className="text-[27px] md:text-[36px] text-primary font-[600] leading-normal text-center max-w-[600px] mx-auto mb-12">Here&#39;s what our bikers are saying about us</h3>
                 <Swiper
                     modules={[Autoplay, Pagination, Navigation]}
                     className=""

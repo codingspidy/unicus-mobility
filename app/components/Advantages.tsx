@@ -12,8 +12,8 @@ const Advantages = () => {
     return (
         <section id="costCalculator" className='pt-[70px] pb-[100px] bg-[#f2f2f2]'>
             <div className='innerDiv mx-auto'>
-                <h3 className="text-[30px] md:text-[40px] font-[600] text-center">Support the <span className="text-secondary">Cause</span>, Choose <span className="text-secondary">Electric</span></h3>
-                <div className="flex items-baseline justify-center mt-12 gap-x-4 md:gap-x-5 gap-y-7 flex-wrap">
+                <h3 className="text-[27px] md:text-[36px] font-[600] text-center max-w-[290px] mx-auto md:max-w-none">Support the <span className="text-secondary">Cause</span>, Choose <span className="text-secondary">Electric</span></h3>
+                <div className="flex items-baseline justify-center max-w-[700px] mx-auto mt-12 gap-x-4 md:gap-x-5 gap-y-7 flex-wrap">
                     <div className="flex flex-col items-center">
                         <div className="relative">
                             <Image src={Shape1} alt="" className="w-[110px] md:w-[150px]" />

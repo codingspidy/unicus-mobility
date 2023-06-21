@@ -16,9 +16,9 @@ const CostCalculator: NextComponentType = () => {
     return (
         <section id="costCalculator" className='py-[100px] bg-[#f2f2f2]'>
             <div className='innerDiv mx-auto'>
-                <div className="flex flex-col md:flex-row md:items-baseline md:gap-x-[7px] mb-12 text-primary">
-                    <h3 className="text-[18px] md:text-[24px] font-[500]">Daily Cost</h3>
-                    <h3 className="text-[30px] md:text-[40px] font-[600] -mt-1 md:-mt-0 md:-mb-[6px]">Comparison</h3>
+                <div className="mb-20">
+                    <h3 className="text-[27px] md:text-[36px] font-[600] -mt-1 md:-mt-0 md:-mb-[6px] text-primary">Affordable electric Bikes:</h3>
+                    <h3 className="text-[27px] md:text-[36px] font-[600] -mt-1 md:-mt-0 md:-mb-[6px] text-secondary">Unlock 2x savings</h3>
                 </div>
                 <div className="flex items-center gap-x-6 justify-between w-full">
                     <div className="flex flex-col w-1/2 md:w-auto">

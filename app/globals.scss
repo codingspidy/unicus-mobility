@@ -11,6 +11,9 @@ body {
   box-sizing: border-box;
 }
 
+.innerDiv {
+  margin-inline: auto;
+}
 @media only screen and (min-width: 280px) {
   .innerDiv {
     padding-left: 20px;
