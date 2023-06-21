@@ -11,31 +11,31 @@ import Image from "next/image";
 const reviewsData = [
     {
         id: 1,
-        name: "Maliha, IXth",
+        name: "Harry, New Delhi",
         review:
             "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
     },
     {
         id: 2,
-        name: "Shairish, XIth",
+        name: "Hermione, Punjab",
         review:
             "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
     },
     {
         id: 3,
-        name: "Maherukh, UPSC",
+        name: "Snape, Kashmir",
         review:
             "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
     },
     {
         id: 4,
-        name: "Shairish, XIth",
+        name: "Sirius, Jharkhand",
         review:
             "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
     },
     {
         id: 5,
-        name: "Maherukh, UPSC",
+        name: "Voldemort, Kerala",
         review:
             "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
     },
@@ -43,7 +43,7 @@ const reviewsData = [
 
 export default function TestimonialsSlider() {
     return (
-        <section className='pt-[40px] pb-[70px] bg-[#f2f2f2]'>
+        <section className='pt-[30px] pb-[70px] bg-[#f2f2f2]'>
             <div className='innerDiv mx-auto'>
                 <h3 className="text-[30px] md:text-[40px] text-primary font-[600] leading-normal text-center max-w-[600px] mx-auto mb-12">Here&#39;s what our bikers are saying about us</h3>
                 <Swiper

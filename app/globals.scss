@@ -225,17 +225,17 @@ footer {
 }
 
 #product {
-  background: #010A26; /* fallback for old browsers */
+  background: #010a26; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
     #000000,
-    #010A26,
+    #010a26,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
     #000000,
-    #010A26,
+    #010a26,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   .specs-card {
@@ -250,17 +250,24 @@ footer {
 }
 
 #footer {
-  background: #010A26; /* fallback for old browsers */
+  background: #010a26; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
     #000000,
-    #010A26,
+    #010a26,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
     #000000,
-    #010A26,
+    #010a26,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-fixed {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
