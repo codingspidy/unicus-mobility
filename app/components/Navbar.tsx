@@ -26,10 +26,147 @@ const Navbar: NextComponentType = () => {
               <div className="lg:block hidden">
                 <ul className="flex items-center gap-x-5 text-[15px] text-white">
                   <li className="px-2 py-1">Home</li>
-                  <li className="px-2 py-1">Book/Rent</li>
-                  <li className="px-2 py-1">About</li>
-                  <li className="px-2 py-1">Explore</li>
-                  <li className="px-2 py-1">Contact</li>
+                  <li className="px-2 py-1 group relative">
+                    Book/Rent
+                    <div
+                      className={
+                        `hidden hover:block group-hover:block bg-white absolute top-[30px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                      }
+                      style={{ minWidth: "12rem" }}
+                    >
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Personal Commute
+                      </a>
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Delivery (Rentals)
+                      </a>
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Fleeting
+                      </a>
+                    </div>
+                  </li>
+                  <li className="px-2 py-1 relative group">
+                    About
+                    <div
+                      className={
+                        `hidden hover:block group-hover:block bg-white absolute top-[30px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                      }
+                      style={{ minWidth: "12rem" }}
+                    >
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Our Values
+                      </a>
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Our Solution
+                      </a>
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Media
+                      </a>
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Gallery
+                      </a>
+                    </div>
+                  </li>
+                  <li className="px-2 py-1 relative group">
+                    Explore
+                    <div
+                      className={
+                        `hidden hover:block group-hover:block bg-white absolute top-[30px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                      }
+                      style={{ minWidth: "12rem" }}
+                    >
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Blog
+                      </a>
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Skill Development
+                      </a>
+                      <a
+                        href="#pablo"
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Flagship 3-wheeler
+                      </a>
+                      <a
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Careers
+                      </a>
+                      <a
+                        className={
+                          "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                        }
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        Initiatives
+                      </a>
+                    </div>
+                  </li>
+                  <li className="px-2 py-1 cursor-pointer">
+                    <Link href="/contact">
+                      Contact
+                    </Link>
+                  </li>
                 </ul>
               </div>
 
@@ -58,10 +195,50 @@ const Navbar: NextComponentType = () => {
 
         <ul className="min-h-[80%] flex flex-col justify-center items-center gap-y-5 text-[22px] text-white">
           <li className="px-2 py-1">Home</li>
-          <li className="px-2 py-1">Book/Rent</li>
+          <li className="px-2 py-1 relative">
+            Book/Rent
+            <div
+              className={
+                `hidden hover:block bg-white absolute top-16 left-0 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+              }
+              style={{ minWidth: "12rem" }}
+            >
+              <a
+                href="#pablo"
+                className={
+                  "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                }
+                onClick={(e) => e.preventDefault()}
+              >
+                Action
+              </a>
+              <a
+                href="#pablo"
+                className={
+                  "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                }
+                onClick={(e) => e.preventDefault()}
+              >
+                Another action
+              </a>
+              <a
+                href="#pablo"
+                className={
+                  "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                }
+                onClick={(e) => e.preventDefault()}
+              >
+                Something else here
+              </a>
+            </div>
+          </li>
           <li className="px-2 py-1">About</li>
           <li className="px-2 py-1">Explore</li>
-          <li className="px-2 py-1">Contact</li>
+          <li className="px-2 py-1 cursor-pointer">
+            <Link href="/contact">
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </>

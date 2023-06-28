@@ -15,17 +15,46 @@ export default function Home() {
       <CostCalculator />
       <Advantages />
       <TestimonialsSlider />
-      {/* <div className="bg-black text-white w-full py-10">
+      <div className="bg-black text-white w-full py-10">
         <div className="innerDiv">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-x-10 gap-y-7">
-            <h5 className="text-[24px] font-[600] text-center md:text-left">Subscribe to our newsletter.</h5>
-            <div className="flex items-center">
-              <input className="w-full max-w-[500px] bg-black border-b border-b-white py-2 px-4 placeholder:text-white" placeholder="Enter your email" />
-              <button className="block text-black py-2 px-4 bg-white border border-white">Subscribe</button>
+          <div className="md:grid grid-cols-2 gap-5">
+            <div className="md:mb-0 mb-4">
+              <h3 className="text-4xl font-medium mb-2">
+                Stay Tuned!
+              </h3>
+              <p className="">
+                Subscribe to our newsletter and never miss out on the latest
+                news.
+              </p>
+            </div>
+            <div>
+              <div className="md:flex gap-x-4">
+                <label className="block mb-4 w-full">
+                  <input
+                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                    placeholder="Your Name"
+                    type="text"
+                  />
+                </label>
+                <label className="block mb-4 w-full">
+                  <input
+
+                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                    placeholder="Email"
+                    type="email"
+                  />
+                </label>
+              </div>
+              <button
+                type="submit"
+                className="py-3 px-6 bg-white text-black font-medium float-right rounded-md"
+              >
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <Payment />
       <Footer />
     </main>
