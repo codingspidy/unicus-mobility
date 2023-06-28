@@ -25,7 +25,11 @@ const Navbar: NextComponentType = () => {
             <div className="inline-flex items-center">
               <div className="lg:block hidden">
                 <ul className="flex items-center gap-x-5 text-[15px] text-white">
-                  <li className="px-2 py-1">Home</li>
+                  <li className="px-2 py-1">
+                    <Link href="/">
+                      Home
+                    </Link>
+                  </li>
                   <li className="px-2 py-1 group relative">
                     Book/Rent
                     <div

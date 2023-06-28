@@ -3,7 +3,7 @@ import CostCalculator from "./components/CostCalculator"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Payment from "./components/Payment"
-import ProductView from "./components/ProductView"
+import ProductView from "./components/ProductView2"
 import TestimonialsSlider from "./components/Testimonials"
 
 export default function Home() {
@@ -15,11 +15,11 @@ export default function Home() {
       <CostCalculator />
       <Advantages />
       <TestimonialsSlider />
-      <div className="bg-black text-white w-full py-10">
+      <div className="bg-black text-white w-full py-16 md:py-10">
         <div className="innerDiv">
           <div className="md:grid grid-cols-2 gap-5">
-            <div className="md:mb-0 mb-4">
-              <h3 className="text-4xl font-medium mb-2">
+            <div className="md:mb-0 mb-6">
+              <h3 className="text-3xl lg:text-4xl font-medium mb-2">
                 Stay Tuned!
               </h3>
               <p className="">
@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <button
                 type="submit"
-                className="py-3 px-6 bg-white text-black font-medium float-right rounded-md"
+                className="py-3 px-6 bg-white text-black font-medium lg:float-right rounded-md"
               >
                 Subscribe
               </button>

@@ -70,10 +70,10 @@ const Contact: NextPage = () => {
 
     return (
         <>
-            <section className='pt-[125px] pb-[50px] sm:pt-[140px] sm:pb-[80px] lg:pt-[160px] lg:pb-[120px]'>
+            <section className='bg-[#f2f2f2] pt-[125px] pb-[50px] sm:pt-[140px] sm:pb-[80px] lg:pt-[160px] lg:pb-[120px]'>
                 <div className='innerDiv mx-auto'>
                     <div className='grid lg:grid-cols-2 gap-8 lg:items-start'>
-                        <div className='bg-primary order-2 text-white py-20 lg:px-14 px-6 lg:mb-0 mb-6 rounded-xl'>
+                        <div className='bg-primary lg:order-2 text-white py-20 lg:px-14 px-6 lg:mb-0 mb-6 rounded-xl'>
                             <h3 className='md:text-4xl text-2xl font-medium mb-3'>How can we help?</h3>
                             <p className=''>Have questions or need to report an issue with a Uvera product or service? We&#39;ve got you covered.</p>
                             <ul className='mt-6 '>
@@ -109,7 +109,7 @@ const Contact: NextPage = () => {
                             <p className='text-[#444444] text-lg font-medium mb-5'>Looking forward to hear from you!</p>
                             <div className='mb-3 flex flex-col lg:flex-row gap-3'>
                                 <input
-                                    className='placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='First Name'
                                     type='text'
                                     id='name'
@@ -118,7 +118,7 @@ const Contact: NextPage = () => {
                                     onChange={(e) => setUserName(e.target.value)}
                                 />
                                 <input
-                                    className='placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='Last Name'
                                     type='text'
                                     id='name'
@@ -129,7 +129,7 @@ const Contact: NextPage = () => {
                             </div>
                             <div className='mb-3'>
                                 <input
-                                    className='placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='Email ID'
                                     type='email'
                                     id='email'
@@ -148,7 +148,7 @@ const Contact: NextPage = () => {
                             </div>
                             <div className='mb-3'>
                                 <input
-                                    className='placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='Subject'
                                     type='text'
                                     name='subject'
@@ -168,7 +168,7 @@ const Contact: NextPage = () => {
                             <div className='mb-3'>
                                 <textarea
                                     rows={7}
-                                    className='placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1'
+                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1'
                                     id='message'
                                     placeholder='Your Message'
                                     name='message'
