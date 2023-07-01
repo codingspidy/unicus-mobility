@@ -24,10 +24,10 @@ export default function ProductView() {
     return (
         <section id="product" className='bg-black relative h-screen'>
             <div className="relative">
-            {/* <div className="absolute top-[0px] z-[40] inset-x-0 w-full h-20 bg-gradient-to-b from-black to-transparent" /> */}
+                {/* <div className="absolute top-[0px] z-[40] inset-x-0 w-full h-20 bg-gradient-to-b from-black to-transparent" /> */}
 
                 <div className="absolute w-full h-full inset-0 z-40 bg-black/75"></div>
-                                            {/* <div className="overlay-gradient-b-intro absolute inset-0 z-10" />
+                {/* <div className="overlay-gradient-b-intro absolute inset-0 z-10" />
                             <div className="overlay-gradient-t-intro absolute z-10 inset-0" /> */}
 
                 <div className="absolute z-40 inset-x-0 bottom-20">
