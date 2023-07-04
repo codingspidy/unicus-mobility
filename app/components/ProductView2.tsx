@@ -30,6 +30,12 @@ export default function ProductView() {
                 {/* <div className="overlay-gradient-b-intro absolute inset-0 z-10" />
                             <div className="overlay-gradient-t-intro absolute z-10 inset-0" /> */}
 
+                <div className="w-full px-7 absolute z-40 top-1/2 -translate-y-1/2 md:top-[35%] left-1/2 -translate-x-1/2">
+                    <div className="w-fit mx-auto">
+                        <h3 className="text-white text-[36px] md:text-[45px] font-semibold leading-none">Design meets performance.</h3>
+                        <p className="text-white text-lg md:text-2xl mt-2">For your Rorring rides</p>
+                    </div>
+                </div>
                 <div className="absolute z-40 inset-x-0 bottom-20">
                     <div className="text-white flex flex-wrap lg:flex-nowrap justify-center items-center gap-3 mt-6">
                         <div className="specs-card min-w-[150px] md:w-[200px] flex items-center gap-4">

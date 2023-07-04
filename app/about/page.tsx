@@ -8,6 +8,13 @@ import SaeLogo from "../images/sae-logo.webp"
 import DominosLogo from "../images/dominos-logo.webp"
 import CartLogo from "../images/cart-logo.webp"
 import mbLogo from "../images/mb-logo.webp"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import Link from "next/link";
 
 const About = () => {
     return (
@@ -28,38 +35,125 @@ const About = () => {
                     <Image src={UnicusLogo} className='w-[250px] md:w-[400px] mx-auto' alt="" />
                     <h4 className='text-lg md:text-2xl text-white -translate-y-[80px] md:-translate-y-[120px]'>#SustainableFutureSimplified</h4>
                 </div>
-                <div className='py-20'>
-                    <div className='innerDiv mx-auto'>
-                        <h3 className="text-center text-secondary text-2xl md:text-4xl font-bold">Services</h3>
-                        <div className="mt-7 flex flex-wrap justify-center gap-10">
-                            <div className="flex flex-col items-center">
-                                <Image src={StudentBike} alt="" />
-                                <p className='max-w-[240px] text-lg text-center mt-2 leading-normal'>Ebikes for Students and Working Professionals</p>
+                <section>
+                    <div className="py-20 px-4">
+                        <div className="relative max-w-screen-lg mx-auto campaign-slider">
+                            <div className="max-w-[950px] mx-auto">
+                                <h3 className="text-center text-3xl md:text-4xl text-secondary font-semibold mb-8">
+                                    Services
+                                </h3>
+                                <Swiper
+                                    slidesPerView={1}
+                                    modules={[Autoplay, Navigation]}
+                                    navigation={{ nextEl: "#next-slider", prevEl: "#prev-slider" }}
+                                    autoplay={{
+                                        delay: 2000,
+                                    }}
+                                    breakpoints={{
+                                        480: {
+                                            slidesPerView: 2,
+                                        },
+                                        768: {
+                                            slidesPerView: 3,
+                                        },
+                                    }}
+                                >
+                                    <SwiperSlide className="px-1 w-fit">
+                                        <div className="w-fit">
+                                            <div className="mb-[9px]">
+                                                <Image
+                                                    className="object-cover lg:w-72 h-56 rounded-xl"
+                                                    src={StudentBike}
+                                                    width={333}
+                                                    height={500}
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <Link href="" className="text-secondary text-lg">
+                                                <span>Read more</span>
+                                                <i className="fa-solid fa-chevron-right text-base ml-2"></i>
+                                            </Link>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide className="px-1 w-fit">
+                                        <div className="w-fit">
+                                            <div className="mb-[9px]">
+                                                <Image
+                                                    className="object-cover lg:w-72 h-56 rounded-xl"
+                                                    src={StudentBike}
+                                                    width={333}
+                                                    height={500}
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <Link href="" className="text-secondary text-lg">
+                                                <span>Read more</span>
+                                                <i className="fa-solid fa-chevron-right text-base ml-2"></i>
+                                            </Link>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide className="px-1 w-fit">
+                                        <div className="w-fit">
+                                            <div className="mb-[9px]">
+                                                <Image
+                                                    className="object-cover lg:w-72 h-56 rounded-xl"
+                                                    src={StudentBike}
+                                                    width={333}
+                                                    height={500}
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <Link href="" className="text-secondary text-lg">
+                                                <span>Read more</span>
+                                                <i className="fa-solid fa-chevron-right text-base ml-2"></i>
+                                            </Link>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide className="px-1 w-fit">
+                                        <div className="w-fit">
+                                            <div className="mb-[9px]">
+                                                <Image
+                                                    className="object-cover lg:w-72 h-56 rounded-xl"
+                                                    src={StudentBike}
+                                                    width={333}
+                                                    height={500}
+                                                    alt=""
+                                                />
+                                            </div>
+                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <Link href="" className="text-secondary text-lg">
+                                                <span>Read more</span>
+                                                <i className="fa-solid fa-chevron-right text-base ml-2"></i>
+                                            </Link>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
                             </div>
-                            <div className="flex flex-col items-center">
-                                <Image src={StudentBike} alt="" />
-                                <p className='max-w-[240px] text-lg text-center mt-2 leading-normal'>Ebikes for Delivery Fleet and Commercial Partners</p>
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <Image src={StudentBike} alt="" />
-                                <p className='max-w-[240px] text-lg text-center mt-2 leading-normal'>Manufacturing of Smart and Durable Batteries</p>
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <Image src={StudentBike} alt="" />
-                                <p className='max-w-[240px] text-lg text-center mt-2 leading-normal'>Retrofitting of Old Vehicles</p>
-                            </div>
+                            <button
+                                className="swiper-button-prev sm:block hidden shadow-2xl"
+                                id="prev-slider"
+                            ></button>
+                            <button
+                                className="swiper-button-next sm:block hidden shadow-2xl"
+                                id="next-slider"
+                            ></button>
                         </div>
                     </div>
-                </div>
+                </section>
                 <div className='py-20'>
                     <div className='innerDiv mx-auto'>
-                        <h3 className="text-center text-secondary text-2xl md:text-4xl font-bold">Clients</h3>
-                        <div className="mt-12 flex flex-wrap justify-center gap-12 md:gap-16">
-                            <Image src={mbLogo} alt="" />
-                            <Image src={DominosLogo} alt="" />
-                            <Image src={jmiLogo} alt="" />
-                            <Image src={CartLogo} alt="" />
-                            <Image src={SaeLogo} alt="" />
+                        <h3 className="text-center text-secondary text-3xl md:text-4xl font-bold">Clients</h3>
+                        <div className="overflow-x-scroll scrollbar-hide">
+                            <div className="mt-12 flex items-center md:justify-center gap-12 md:gap-16">
+                                <Image src={mbLogo} alt="" />
+                                <Image src={DominosLogo} alt="" />
+                                <Image src={jmiLogo} alt="" />
+                                <Image src={CartLogo} alt="" />
+                                <Image src={SaeLogo} alt="" />
+                            </div>
                         </div>
                         <div className="mt-16 max-w-[900px] mx-auto">
                             <h4 className="text-secondary font-semibold mt-10 text-lg md:text-xl">Green Initiatives</h4>

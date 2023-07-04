@@ -6,7 +6,7 @@ const Payment = () => {
     return (
         <section className='py-[80px] md:py-[70px] bg-secondary text-white'>
             <div className='innerDiv mx-auto'>
-                <div className="flex flex-col lg:flex-row lg:justify-around items-center text-center lg:text-left">
+                <div className="flex flex-col lg:flex-row lg:justify-center lg:gap-[100px] items-center text-center lg:text-left">
                     <h3 className="text-[27px] md:text-[40px] font-[600] leading-[1.3] md:max-w-[300px] text-black">SCAN to Contribute*</h3>
                     <div className='flex flex-col items-center lg:flex-row lg:gap-6 mt-7 lg:mt-0'>
                         <Image alt="" src={QrImg} className="filter saturate-[10%] max-w-full" />

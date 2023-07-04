@@ -6,7 +6,6 @@ import ProductView from "./components/ProductView2"
 import TestimonialsSlider from "./components/Testimonials"
 
 export default function Home() {
-
   return (
     <main className="min-h-screen overflow-x-hidden">
       <Hero />
@@ -14,6 +13,7 @@ export default function Home() {
       <CostCalculator />
       <Advantages />
       <TestimonialsSlider />
+      <Payment />
       <div className="bg-black text-white w-full py-16 md:py-10">
         <div className="innerDiv">
           <div className="md:grid grid-cols-2 gap-5">
@@ -54,7 +54,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Payment />
-x    </main>
+    </main>
   )
 }

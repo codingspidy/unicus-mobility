@@ -68,7 +68,9 @@ const Navbar: NextComponentType = () => {
                     </div>
                   </li>
                   <li className="px-2 py-1 relative group">
-                    About
+                    <Link href="/about">
+                      About
+                    </Link>
                     <div
                       className={
                         `hidden hover:block group-hover:block bg-white absolute top-[30px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
@@ -198,7 +200,11 @@ const Navbar: NextComponentType = () => {
         </a>
 
         <ul className="min-h-[80%] flex flex-col justify-center items-center gap-y-5 text-[22px] text-white">
-          <li className="px-2 py-1">Home</li>
+          <li className="px-2 py-1">
+            <Link href="/">
+              Home
+            </Link>
+          </li>
           <li className="px-2 py-1 relative">
             Book/Rent
             <div
@@ -236,7 +242,11 @@ const Navbar: NextComponentType = () => {
               </a>
             </div>
           </li>
-          <li className="px-2 py-1">About</li>
+          <li className="px-2 py-1">
+            <Link href="/about">
+              About
+            </Link>
+          </li>
           <li className="px-2 py-1">Explore</li>
           <li className="px-2 py-1 cursor-pointer">
             <Link href="/contact">

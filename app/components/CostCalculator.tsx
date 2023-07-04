@@ -26,9 +26,9 @@ const CostCalculator: NextComponentType = () => {
                             <Image src={BikeImg} alt="" width={60} height={60} className="object-cover w-[50px] h-[50px] md:w-[70px] md:h-[70px]" />
                             <h5 className="font-[800] mt-3">Unicus e-bike</h5>
                             <div className='text-[28px] flex items-baseline md:text-[42px] font-[800] -mt-1 md:w-[220px]'>
-                                <span className="text-[#61BA89] text-[34px] md:text-[54px]">&#8377;</span>
-                                <span className='text-[#61BA89]'>{calculateCost(0.2)}</span>
-                                <span className="text-xs text-[#61BA89]">/day</span>
+                                <span className="text-secondary text-[34px] md:text-[54px]">&#8377;</span>
+                                <span className='text-secondary'>{calculateCost(0.2)}</span>
+                                <span className="text-xs text-secondary">/day</span>
                             </div>
                         </div>
                         <div className="flex flex-col w-1/2">

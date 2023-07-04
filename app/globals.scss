@@ -228,7 +228,7 @@ footer {
 }
 
 #product {
-  background: #000000; 
+  background: #000000;
 
   .specs-card {
     background: rgba(0, 0, 0, 0.25);
@@ -272,12 +272,7 @@ footer {
     #010a26,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #000000,
-    #010a26,
-    #000000
-  );
+  background: linear-gradient(to bottom, #000000, #010a26, #000000);
 }
 
 .overlay-gradient-b-intro {
@@ -296,10 +291,38 @@ footer {
     #010a26,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #000000,
-    #010a26,
-    #000000
-  );
+  background: linear-gradient(to bottom, #000000, #010a26, #000000);
+}
+
+.campaign-slider .swiper-button-prev,
+.campaign-slider .swiper-button-next {
+  display: none;
+  background: #000000;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50%;
+  z-index: 10 !important;
+  &::after {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .campaign-slider .swiper-button-prev,
+  .campaign-slider .swiper-button-next {
+    display: block;
+  }
+}
+
+.campaign-slider .swiper-button-next {
+  right: 5px !important;
+  transform: translateX(-100%);
+  margin-top: -50px !important;
+}
+.campaign-slider .swiper-button-prev {
+  left: -15px !important;
+  transform: translateX(100%);
+  margin-top: -50px !important;
 }
