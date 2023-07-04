@@ -1,6 +1,5 @@
 import Advantages from "./components/Advantages"
 import CostCalculator from "./components/CostCalculator"
-import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Payment from "./components/Payment"
 import ProductView from "./components/ProductView2"
@@ -56,7 +55,6 @@ export default function Home() {
         </div>
       </div>
       <Payment />
-      <Footer />
-    </main>
+x    </main>
   )
 }

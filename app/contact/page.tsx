@@ -70,17 +70,17 @@ const Contact: NextPage = () => {
 
     return (
         <>
-            <section className='bg-[#f2f2f2] pt-[125px] pb-[50px] sm:pt-[140px] sm:pb-[80px] lg:pt-[160px] lg:pb-[120px]'>
+            <section className='bg-[#ffffff] pt-[125px] pb-[50px] sm:pt-[140px] sm:pb-[80px] lg:pt-[160px] lg:pb-[120px]'>
                 <div className='innerDiv mx-auto'>
                     <div className='grid lg:grid-cols-2 gap-8 lg:items-start'>
-                        <div className='bg-primary lg:order-2 text-white py-20 lg:px-14 px-6 lg:mb-0 mb-6 rounded-xl'>
+                        <div className='bg-black lg:order-2 text-white py-20 lg:px-14 px-6 lg:mb-0 mb-6 rounded-xl'>
                             <h3 className='md:text-4xl text-2xl font-medium mb-3'>How can we help?</h3>
                             <p className=''>Have questions or need to report an issue with a Uvera product or service? We&#39;ve got you covered.</p>
                             <ul className='mt-6 '>
                                 <li className='mb-4'>
                                     <a href='mailto:admissions@gurucool.xyz' className='flex items-center'>
                                         <span className='flex items-center justify-center bg-white md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
-                                            <i className='fas fa-envelope text-primary'></i>
+                                            <i className='fas fa-envelope text-black'></i>
                                         </span>
                                         <span className='ml-3 md:text-lg text-base font-medium'>unicusmobility@gmail.com</span>
                                     </a>
@@ -88,7 +88,7 @@ const Contact: NextPage = () => {
                                 <li className='mb-4'>
                                     <a className='flex items-center'>
                                         <span className='flex items-center justify-center bg-white md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
-                                            <i className='far fa-phone text-primary'></i>
+                                            <i className='far fa-phone text-black'></i>
                                         </span>
                                         <span className='ml-3 md:text-lg text-base font-medium'>+91 9718122534</span>
                                     </a>
@@ -96,7 +96,7 @@ const Contact: NextPage = () => {
                                 <li className=''>
                                     <a href='tel:8147354051' className='flex items-center'>
                                         <span className='flex items-center justify-center bg-white md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
-                                            <i className='far fa-phone text-primary'></i>
+                                            <i className='far fa-phone text-black'></i>
                                         </span>
                                         <span className='ml-3 md:text-lg text-base  font-medium'>9119145922</span>
                                     </a>
@@ -105,11 +105,11 @@ const Contact: NextPage = () => {
                         </div>
 
                         <div className=''>
-                            <h3 className='text-primary md:text-4xl text-3xl font-semibold mb-1'>Contact us here</h3>
+                            <h3 className='text-black md:text-4xl text-3xl font-semibold mb-1'>Contact us here</h3>
                             <p className='text-[#444444] text-lg font-medium mb-5'>Looking forward to hear from you!</p>
                             <div className='mb-3 flex flex-col lg:flex-row gap-3'>
                                 <input
-                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#ffffff] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='First Name'
                                     type='text'
                                     id='name'
@@ -118,7 +118,7 @@ const Contact: NextPage = () => {
                                     onChange={(e) => setUserName(e.target.value)}
                                 />
                                 <input
-                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#ffffff] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='Last Name'
                                     type='text'
                                     id='name'
@@ -129,7 +129,7 @@ const Contact: NextPage = () => {
                             </div>
                             <div className='mb-3'>
                                 <input
-                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#ffffff] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='Email ID'
                                     type='email'
                                     id='email'
@@ -148,7 +148,7 @@ const Contact: NextPage = () => {
                             </div>
                             <div className='mb-3'>
                                 <input
-                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
+                                    className='placeholder:text-slate-400 block bg-[#ffffff] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1 h-12'
                                     placeholder='Subject'
                                     type='text'
                                     name='subject'
@@ -168,7 +168,7 @@ const Contact: NextPage = () => {
                             <div className='mb-3'>
                                 <textarea
                                     rows={7}
-                                    className='placeholder:text-slate-400 block bg-[#f2f2f2] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1'
+                                    className='placeholder:text-slate-400 block bg-[#ffffff] w-full border border-slate-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:ring-1'
                                     id='message'
                                     placeholder='Your Message'
                                     name='message'
@@ -177,7 +177,7 @@ const Contact: NextPage = () => {
                             </div>
                             {/* <span className='text-yellow block my-6 text-base'>{formSent && <>You&#39;re response has been saved! Our team will reach out to you soon.</>}</span> */}
                             <div className='text-center mb-3'>
-                                <button type='submit' className='bg-primary text-white px-12 rounded-full py-3 flex items-center justify-center'> { /* onClcik={handleContact} disabled={loading} */}
+                                <button type='submit' className='bg-black text-white px-12 rounded-full py-3 flex items-center justify-center'> { /* onClcik={handleContact} disabled={loading} */}
                                     {loading && <span className='spinner-loader mr-2'></span>}
                                     Submit
                                 </button>

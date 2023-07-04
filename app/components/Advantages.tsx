@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const Advantages = () => {
     return (
-        <section id="costCalculator" className='pt-[70px] pb-[100px] bg-[#f2f2f2]'>
+        <section id="costCalculator" className='pt-[70px] pb-[100px] bg-[#ffffff]'>
             <div className='innerDiv mx-auto'>
                 <h3 className="text-[27px] md:text-[36px] font-[600] text-center mx-auto max-w-[290px] md:max-w-none">Support the <span className="text-secondary">Cause</span>, Choose <span className="text-secondary">Electric</span></h3>
                 <div className="flex items-baseline justify-center md:justify-between mt-12 gap-x-4 md:gap-x-0 gap-y-7 flex-wrap">
@@ -19,42 +19,42 @@ const Advantages = () => {
                             <Image src={Shape1} alt="" className="w-[110px] md:w-[150px]" />
                             <Image src={Fuel} alt="" className="w-8 md:w-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                         </div>
-                        <p className="text-primary max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Shrug off soaring fuel prices</p>
+                        <p className="text-black max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Shrug off soaring fuel prices</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="relative">
                             <Image src={Shape1} alt="" className="w-[110px] md:w-[150px]" />
                             <Image src={HourGlass} alt="" className="w-7 md:w-9 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                         </div>
-                        <p className="text-primary max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Save on your commute time</p>
+                        <p className="text-black max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Save on your commute time</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="relative">
                             <Image src={Shape1} alt="" className="w-[110px] md:w-[150px]" />
                             <Image src={Earth} alt="" className="w-8 md:w-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                         </div>
-                        <p className="text-primary max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Protect the environment with zero emmission</p>
+                        <p className="text-black max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Protect the environment with zero emmission</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="relative">
                             <Image src={Shape1} alt="" className="w-[110px] md:w-[150px]" />
                             <Image src={Person} alt="" className="w-8 md:w-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                         </div>
-                        <p className="text-primary max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Do not get tired easily</p>
+                        <p className="text-black max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Do not get tired easily</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="relative">
                             <Image src={Shape1} alt="" className="w-[110px] md:w-[150px]" />
                             <Image src={City} alt="" className="w-8 md:w-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                         </div>
-                        <p className="text-primary max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Best for busy Urban areas</p>
+                        <p className="text-black max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Best for busy Urban areas</p>
                     </div>
                     <div className="flex flex-col items-center">
                         <div className="relative">
                             <Image src={Shape1} alt="" className="w-[110px] md:w-[150px]" />
                             <Image src={Heart} alt="" className="w-8 md:w-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                         </div>
-                        <p className="text-primary max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Enjoy low-impact cardio workout</p>
+                        <p className="text-black max-w-[140px] sm:max-w-[160px] font-[500] text-center mt-2">Enjoy low-impact cardio workout</p>
                     </div>
                 </div>
             </div>

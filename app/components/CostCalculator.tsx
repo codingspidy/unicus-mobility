@@ -14,11 +14,11 @@ const CostCalculator: NextComponentType = () => {
     }
 
     return (
-        <section id="costCalculator" className='py-[100px] bg-[#f2f2f2]'>
+        <section id="costCalculator" className='py-[100px] bg-[#ffffff]'>
             <div className='innerDiv mx-auto'>
                 <div className="lg:flex lg:justify-between">
-                    <div className="mb-16 lg:mb-0 w-full lg:text-center">
-                        <h3 className="text-[27px] md:text-[36px] font-[600] -mt-1 md:-mt-0 md:-mb-[6px] text-primary">Affordable electric Bikes:</h3>
+                    <div className="mb-16 lg:mb-0 w-full">
+                        <h3 className="text-[27px] md:text-[36px] font-[600] -mt-1 md:-mt-0 md:-mb-[6px] text-black">Affordable electric Bikes:</h3>
                         <h3 className="text-[27px] md:text-[36px] font-[600] -mt-1 md:-mt-0 md:-mb-[6px] text-secondary">Unlock 2x savings</h3>
                     </div>
                     <div className="flex items-center gap-x-6 w-full">
@@ -51,10 +51,10 @@ const CostCalculator: NextComponentType = () => {
                     </div> */}
                     </div>
                 </div>
-                <div className='w-full mt-7 lg:-mt-7 text-primary'>
+                <div className='w-full mt-7 lg:-mt-7 text-black'>
                     <label htmlFor="distance-range" className="text-right lg:text-left block mb-7 lg:mb-7 text-[18px] md:text-[22px] w-full font-[600]">Daily usage {cost} km(s)</label>
                     <div className='relative w-full'>
-                        <input id="distance-range" onChange={(e) => setCost(e.target.value)} type="range" min={1} max={200} value={cost} className="w-full h-5 md:h-7 bg-primary accent-secondary appearance-none cursor-pointer" />
+                        <input id="distance-range" onChange={(e) => setCost(e.target.value)} type="range" min={1} max={200} value={cost} className="w-full h-5 md:h-7 bg-black accent-secondary appearance-none cursor-pointer" />
                         <div className="flex items-center justify-center gap-7 bg-transparent w-full h-1 absolute z-10 left-0 top-1/2 -mt-[5px]">
                             <div className='bg-white w-7 md:w-11 h-[3px] md:h-1' />
                             <div className='bg-white w-7 md:w-11 h-[3px] md:h-1' />

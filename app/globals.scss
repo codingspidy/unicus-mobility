@@ -287,3 +287,19 @@ footer {
 .overlay-gradient-t-intro {
   background: linear-gradient(to top, #000000 1%, rgba(0, 0, 0, 0) 100%);
 }
+
+.theme-gradient {
+  background: #010a26; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #000000,
+    #010a26,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #010a26,
+    #000000
+  );
+}

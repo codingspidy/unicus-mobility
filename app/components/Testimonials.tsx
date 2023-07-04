@@ -43,9 +43,9 @@ const reviewsData = [
 
 export default function TestimonialsSlider() {
     return (
-        <section className='pt-[30px] pb-[70px] bg-[#f2f2f2]'>
+        <section className='pt-[30px] pb-[70px] bg-[#ffffff]'>
             <div className='innerDiv mx-auto'>
-                <h3 className="text-[27px] md:text-[36px] text-primary font-[600] leading-normal text-center max-w-[600px] mx-auto mb-12">Here&#39;s what our bikers are saying about us</h3>
+                <h3 className="text-[27px] md:text-[36px] text-black font-[600] leading-normal text-center max-w-[600px] mx-auto mb-12">Here&#39;s what our bikers are saying about us</h3>
                 <Swiper
                     modules={[Autoplay, Pagination, Navigation]}
                     className=""
@@ -67,7 +67,7 @@ export default function TestimonialsSlider() {
                     {reviewsData.map((data, index) => (
                         <SwiperSlide className="py-10" key={data.id}>
                             <div
-                                className={`relative w-full max-w-[400px] mx-auto border border-primary rounded-md px-6 pt-16 pb-8 ${index === 2 ? "bg-primary text-white" : "bg-[#f2f2f2] text-primary"
+                                className={`relative w-full max-w-[400px] mx-auto border border-primary rounded-md px-6 pt-16 pb-8 ${index === 2 ? "bg-black text-white" : "bg-[#ffffff] text-black"
                                     }`}
                             >
                                 <div className="absolute z-[1] left-1/2 -translate-x-1/2 -top-10">
