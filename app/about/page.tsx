@@ -19,7 +19,7 @@ import Link from "next/link";
 const About = () => {
     return (
         <>
-            <section className='bg-[#ffffff] pt-[125px] pb-[50px] sm:pt-[140px] sm:pb-[80px] lg:pt-[160px] lg:pb-[120px]'>
+            <section className='bg-[#ffffff] pt-[125px] sm:pt-[140px] lg:pt-[160px]'>
                 <div className="px-4">
                     <div className='max-w-[900px] mx-auto'>
                         <h2 className='text-center text-[26px] md:text-[42px] font-bold text-secondary'>Who Are We</h2>
@@ -160,6 +160,62 @@ const About = () => {
                             <p className="leading-normal mt-2">We have initiatives like tree plantation for every electric vehicle manufactured as well as when the vehicles reach milestones like 100, 500, or 1000 kilometres of driving, etc. These trees and seedlings are cared for by our business. Giving back to nature could rank among our greatest accomplishments. In our workplace, we promote going digital wherever feasible in order to decrease the amount of paper used. To save energy, we select lighting and office equipment that is energy-efficient. To increase our influence, we are always willing to collaborate with other initiatives or groups who share our concern for the environment. Last but not least, we provide incentives or awards for customers that adopt eco-friendly practises, such utilising recyclable containers or bags.</p>
                             <h4 className="text-secondary font-semibold mt-10 text-lg md:text-xl">Education Initiatives</h4>
                             <p className="leading-normal mt-2">We concentrate on bringing awareness of EVs and their sustainability to a wide audience, including high school and college students as well as members of the public and business sectors. We host free-of-cost webinars and workshops on EV technology and maintenance for the general public and potential EV owners.   We frequently collaborate with educational institutions to provide teachers and students EV education and training. We emphasise the value of sustainability to our customers and staff, encouraging them to make more eco-friendly decisions in both their personal and professional life. One of our teams is involved in curating online courses and tutorials on EV technology, charging infrastructure, and related topics. We establish partnerships with local governments and organizations to promote EV adoption and provide education and resources to underserved communities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-black text-white w-full py-16 md:py-10">
+                    <div className="innerDiv">
+                        <div className="">
+                            <div className="md:mb-0 mb-6">
+                                <h3 className="text-3xl lg:text-4xl font-medium mb-2">
+                                    Let&#39;s work together!
+                                </h3>
+                                <p className="">
+                                    Join us as an intern or a full-time/part time employee.
+                                </p>
+                            </div>
+                            <div className="mt-7">
+                                <div className="md:flex gap-x-4 items-start">
+                                    <div className='flex flex-col gap-4 w-full'>
+                                        <label className="block w-full">
+                                            <input
+                                                className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                                placeholder="Your Name"
+                                                type="text"
+                                            />
+                                        </label>
+                                        <div className='flex flex-col md:flex-row gap-4'>
+                                            <label className="block w-full">
+                                                <input
+                                                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                                    placeholder="Email"
+                                                    type="email"
+                                                />
+                                            </label>
+                                            <label className="block mb-4 w-full">
+                                                <input
+                                                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                                    placeholder="Phone"
+                                                    type="phone"
+                                                />
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label className="block mb-4 w-full h-full">
+                                        <textarea
+                                            className="placeholder:text-[#646464] block h-[140px] md:h-[112px] w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                            placeholder="Message"
+                                        ></textarea>
+                                    </label>
+                                    <button
+                                        type="submit"
+                                        className="py-3 px-6 bg-white text-black font-medium lg:float-right rounded-md"
+                                    >
+                                        Request
+                                    </button>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
