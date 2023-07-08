@@ -326,3 +326,9 @@ footer {
   transform: translateX(100%);
   margin-top: -50px !important;
 }
+
+#clientsSlider {
+  .swiper-slide {
+    width: fit-content !important;
+  }
+}

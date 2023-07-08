@@ -39,9 +39,12 @@ const About = () => {
                     <div className="py-20 px-4">
                         <div className="relative max-w-screen-lg mx-auto campaign-slider">
                             <div className="max-w-[950px] mx-auto">
-                                <h3 className="text-center text-3xl md:text-4xl text-secondary font-semibold mb-8">
+                                <h3 className="text-center text-3xl md:text-4xl text-secondary font-semibold mb-3">
                                     Services
                                 </h3>
+                                <p className='text-primary text-center font-medium md:text-lg mb-10'>
+                                    We offer a wide range of services in the EV space. 100% Made in India electric vehicles.
+                                </p>
                                 <Swiper
                                     slidesPerView={1}
                                     modules={[Autoplay, Navigation]}
@@ -69,7 +72,7 @@ const About = () => {
                                                     alt=""
                                                 />
                                             </div>
-                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <p className='text-primary text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
                                             <Link href="" className="text-secondary text-lg">
                                                 <span>Read more</span>
                                                 <i className="fa-solid fa-chevron-right text-base ml-2"></i>
@@ -87,7 +90,7 @@ const About = () => {
                                                     alt=""
                                                 />
                                             </div>
-                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <p className='text-primary text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
                                             <Link href="" className="text-secondary text-lg">
                                                 <span>Read more</span>
                                                 <i className="fa-solid fa-chevron-right text-base ml-2"></i>
@@ -105,7 +108,7 @@ const About = () => {
                                                     alt=""
                                                 />
                                             </div>
-                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <p className='text-primary text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
                                             <Link href="" className="text-secondary text-lg">
                                                 <span>Read more</span>
                                                 <i className="fa-solid fa-chevron-right text-base ml-2"></i>
@@ -123,7 +126,7 @@ const About = () => {
                                                     alt=""
                                                 />
                                             </div>
-                                            <p className='text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
+                                            <p className='text-primary text-lg mt-2 leading-normal font-medium mb-[7px]'>Ebikes for Students and Working Professionals</p>
                                             <Link href="" className="text-secondary text-lg">
                                                 <span>Read more</span>
                                                 <i className="fa-solid fa-chevron-right text-base ml-2"></i>
@@ -146,7 +149,7 @@ const About = () => {
                 <div className='py-20'>
                     <div className='innerDiv mx-auto'>
                         <h3 className="text-center text-secondary text-3xl md:text-4xl font-bold">Clients</h3>
-                        <div className="overflow-x-scroll scrollbar-hide">
+                        {/* <div className="overflow-x-scroll scrollbar-hide">
                             <div className="mt-12 flex items-center md:justify-center gap-12 md:gap-16">
                                 <Image src={mbLogo} alt="" />
                                 <Image src={DominosLogo} alt="" />
@@ -154,17 +157,55 @@ const About = () => {
                                 <Image src={CartLogo} alt="" />
                                 <Image src={SaeLogo} alt="" />
                             </div>
+                        </div> */}
+                        <div id="clientsSlider" className='mt-12 w-fit mx-auto'>
+                            <Swiper
+                                className=''
+                                modules={[Autoplay]}
+                                //spaceBetween={30}
+                                slidesPerView={3}
+                                breakpoints={{
+                                    480: {
+                                        width: 320,
+                                        slidesPerView: 4,
+                                        // spaceBetween: 15,
+                                    },
+                                    640: {
+                                        width: 640,
+                                        slidesPerView: 5,
+                                        //spaceBetween: 20,
+                                    },
+                                }}
+                                autoplay
+                                loop
+                            >
+                                <SwiperSlide>
+                                    <Image className="mx-6 lg:mx-10 w-16 md:w-[80px] lg:w-[90px]" src={mbLogo} alt='' />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <Image className="mx-6 lg:mx-10 w-16 md:w-[80px] lg:w-[90px]" src={DominosLogo} alt='' />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <Image className="mx-6 lg:mx-10 w-16 md:w-[80px] lg:w-[90px]" src={jmiLogo} alt='' />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <Image className="mx-6 lg:mx-10 w-16 md:w-[80px] lg:w-[90px]" src={CartLogo} alt='' />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <Image className="mx-6 lg:mx-10 w-16 md:w-[80px] lg:w-[90px]" src={SaeLogo} alt='' />
+                                </SwiperSlide>
+                            </Swiper>
                         </div>
                         <div className="mt-16 max-w-[900px] mx-auto">
                             <h4 className="text-secondary font-semibold mt-10 text-lg md:text-xl">Green Initiatives</h4>
-                            <p className="leading-normal mt-2">We have initiatives like tree plantation for every electric vehicle manufactured as well as when the vehicles reach milestones like 100, 500, or 1000 kilometres of driving, etc. These trees and seedlings are cared for by our business. Giving back to nature could rank among our greatest accomplishments. In our workplace, we promote going digital wherever feasible in order to decrease the amount of paper used. To save energy, we select lighting and office equipment that is energy-efficient. To increase our influence, we are always willing to collaborate with other initiatives or groups who share our concern for the environment. Last but not least, we provide incentives or awards for customers that adopt eco-friendly practises, such utilising recyclable containers or bags.</p>
+                            <p className="text-primary leading-normal mt-2">We have initiatives like tree plantation for every electric vehicle manufactured as well as when the vehicles reach milestones like 100, 500, or 1000 kilometres of driving, etc. These trees and seedlings are cared for by our business. Giving back to nature could rank among our greatest accomplishments. In our workplace, we promote going digital wherever feasible in order to decrease the amount of paper used. To save energy, we select lighting and office equipment that is energy-efficient. To increase our influence, we are always willing to collaborate with other initiatives or groups who share our concern for the environment. Last but not least, we provide incentives or awards for customers that adopt eco-friendly practises, such utilising recyclable containers or bags.</p>
                             <h4 className="text-secondary font-semibold mt-10 text-lg md:text-xl">Education Initiatives</h4>
-                            <p className="leading-normal mt-2">We concentrate on bringing awareness of EVs and their sustainability to a wide audience, including high school and college students as well as members of the public and business sectors. We host free-of-cost webinars and workshops on EV technology and maintenance for the general public and potential EV owners.   We frequently collaborate with educational institutions to provide teachers and students EV education and training. We emphasise the value of sustainability to our customers and staff, encouraging them to make more eco-friendly decisions in both their personal and professional life. One of our teams is involved in curating online courses and tutorials on EV technology, charging infrastructure, and related topics. We establish partnerships with local governments and organizations to promote EV adoption and provide education and resources to underserved communities.</p>
+                            <p className="text-primary leading-normal mt-2">We concentrate on bringing awareness of EVs and their sustainability to a wide audience, including high school and college students as well as members of the public and business sectors. We host free-of-cost webinars and workshops on EV technology and maintenance for the general public and potential EV owners.   We frequently collaborate with educational institutions to provide teachers and students EV education and training. We emphasise the value of sustainability to our customers and staff, encouraging them to make more eco-friendly decisions in both their personal and professional life. One of our teams is involved in curating online courses and tutorials on EV technology, charging infrastructure, and related topics. We establish partnerships with local governments and organizations to promote EV adoption and provide education and resources to underserved communities.</p>
                         </div>
                     </div>
                 </div>
-                <div className="bg-black text-white w-full py-16 md:py-10">
-                    <div className="innerDiv">
+                <div className="bg-black text-white w-full px-4 lg:px-0 py-16 md:py-20">
+                    <div className="max-w-[900px] mx-auto">
                         <div className="">
                             <div className="md:mb-0 mb-6">
                                 <h3 className="text-3xl lg:text-4xl font-medium mb-2">
@@ -207,14 +248,14 @@ const About = () => {
                                             placeholder="Message"
                                         ></textarea>
                                     </label>
-                                    <button
-                                        type="submit"
-                                        className="py-3 px-6 bg-white text-black font-medium lg:float-right rounded-md"
-                                    >
-                                        Request
-                                    </button>
-
                                 </div>
+                                <button
+                                    type="submit"
+                                    className="py-3 px-6 bg-white text-black font-medium lg:float-right rounded-md"
+                                >
+                                    Request
+                                </button>
+
                             </div>
                         </div>
                     </div>
