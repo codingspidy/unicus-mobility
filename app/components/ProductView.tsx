@@ -1,18 +1,35 @@
-import Image from 'next/image'
-import React from 'react'
-import UnicusBikeImg from '../images/unicus-bike.png'
+'use client'
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper";
+import slide1 from "../images/ninja-bike.jpg";
+import slide2 from "../images/ninja-bike4.jpg";
+import slide3 from "../images/ninja-bike3.jpg";
+import Image from "next/image";
 import BatteryImg from "../images/battery.svg"
 import SpeedImg from "../images/speed.svg"
 import MapImg from "../images/map.svg"
 import RupeeImg from "../images/rupee.svg"
 
-const ProductView = () => {
+
+export default function ProductView() {
     return (
-        <section id="product" className='pt-[120px] pb-[120px] bg-black relative'>
-            <div className="absolute -top-[75px] z-[10] inset-x-0 w-full h-20 bg-gradient-to-t from-black to-transparent" />
-            <div className='innerDiv mx-auto'>
-                <div className="flex flex-col items-center w-full justify-center max-w-[600px] mx-auto">
-                    <Image src={UnicusBikeImg} width={631} height={395} alt="" className="" />
+        <section id="product" className='bg-black relative h-screen'>
+            <div className="relative">
+                <div className="absolute w-full h-full inset-0 z-40 bg-black/50"></div>
+                <div className="overlay-gradient-b-intro absolute inset-0 z-50" />
+
+                <div className="w-full px-7 absolute z-[60] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                    <div className="w-fit mx-auto">
+                        <h3 className="text-white text-[36px] md:text-[45px] font-semibold leading-none">Design meets performance.</h3>
+                        <p className="text-white text-lg md:text-2xl mt-2">For your Rorring rides</p>
+                    </div>
+                </div>
+                <div className="absolute z-[60] inset-x-0 bottom-20">
                     <div className="text-white flex flex-wrap lg:flex-nowrap justify-center items-center gap-3 mt-6">
                         <div className="specs-card min-w-[150px] md:w-[200px] flex items-center gap-4">
                             <Image src={SpeedImg} alt="" width={16} height={16} className="w-5 md:w-6" />
@@ -44,9 +61,42 @@ const ProductView = () => {
                         </div>
                     </div>
                 </div>
+                <Swiper
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 4000,
+                    }}
+                    modules={[Autoplay]}
+                >
+                    <SwiperSlide>
+                        <div className="relative">
+                            <Image
+                                className="w-full h-screen object-cover object-top"
+                                src={slide1}
+                                alt=""
+                            />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="relative">
+                            <Image
+                                className="w-full h-screen object-cover object-top"
+                                src={slide2}
+                                alt=""
+                            />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="relative">
+                            <Image
+                                className="w-full h-screen object-cover object-top"
+                                src={slide3}
+                                alt=""
+                            />
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
         </section>
-    )
+    );
 }
-
-export default ProductView

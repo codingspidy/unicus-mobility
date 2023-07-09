@@ -67,7 +67,7 @@ export default function TestimonialsSlider() {
                     {reviewsData.map((data, index) => (
                         <SwiperSlide className="py-10" key={data.id}>
                             <div
-                                className={`relative w-full max-w-[400px] mx-auto border border-primary rounded-md px-6 pt-16 pb-8 ${index === 2 ? "bg-black text-white" : "bg-[#ffffff] text-black"
+                                className={`relative w-full max-w-[400px] mx-auto border border-primary rounded-md px-6 pt-16 pb-8 ${index === 2 ? "bg-[#0d0d0d] text-white" : "bg-[#ffffff] text-black"
                                     }`}
                             >
                                 <div className="absolute z-[1] left-1/2 -translate-x-1/2 -top-10">

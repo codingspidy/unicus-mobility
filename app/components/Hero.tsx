@@ -16,7 +16,7 @@ const Hero: NextComponentType = () => {
 
   return (
     <section id="custom-video" className="relative after:absolute sm:h-auto h-[100vh] after:inset-0 after:bg-[rgba(0,0,0,.8)]">
-      <div className="overlay-gradient-b-intro h-[400px] w-full absolute bottom-0 inset-x-0" />
+      <div className="overlay-gradient-t-intro h-[400px] w-full absolute z-50 bottom-0 inset-x-0" />
       <div id="videoCont" className={`video-container sm:h-auto h-[100vh] relative ${isFullScreen ? "full-screen-video" : ""}`}>
         <div id="closeBtn">
           <button
@@ -32,7 +32,7 @@ const Hero: NextComponentType = () => {
           <source src="intro.mp4" type="video/mp4" />
         </video>
 
-        <div className={`heroText-container absolute inset-0 pt-[200px] sm:pt-[180px] lg:pt-[250px] ${isFullScreen ? "relative" : ""}`}>
+        <div className={`heroText-container absolute z-[60] inset-0 pt-[200px] sm:pt-[180px] lg:pt-[250px] ${isFullScreen ? "relative" : ""}`}>
           <div className="innerDiv mx-auto">
             <div className="flex justify-start relative z-[9] items-center">
               <div className="w-full">

@@ -220,7 +220,7 @@ const About = () => {
                                     <div className='flex flex-col gap-4 w-full'>
                                         <label className="block w-full">
                                             <input
-                                                className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                                className="placeholder:text-[#646464] block w-full bg-[#0d0d0d] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
                                                 placeholder="Your Name"
                                                 type="text"
                                             />
@@ -228,14 +228,14 @@ const About = () => {
                                         <div className='flex flex-col md:flex-row gap-4'>
                                             <label className="block w-full">
                                                 <input
-                                                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                                    className="placeholder:text-[#646464] block w-full bg-[#0d0d0d] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
                                                     placeholder="Email"
                                                     type="email"
                                                 />
                                             </label>
                                             <label className="block mb-4 w-full">
                                                 <input
-                                                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                                    className="placeholder:text-[#646464] block w-full bg-[#0d0d0d] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
                                                     placeholder="Phone"
                                                     type="phone"
                                                 />
@@ -244,7 +244,7 @@ const About = () => {
                                     </div>
                                     <label className="block mb-4 w-full h-full">
                                         <textarea
-                                            className="placeholder:text-[#646464] block h-[140px] md:h-[112px] w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                                            className="placeholder:text-[#646464] block h-[140px] md:h-[112px] w-full bg-[#0d0d0d] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
                                             placeholder="Message"
                                         ></textarea>
                                     </label>

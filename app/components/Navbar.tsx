@@ -196,10 +196,10 @@ const Navbar: NextComponentType = () => {
             setShowMenu(!showMenu);
           }}
         >
-          <CloseIcon className="w-8" />
+          <CloseIcon className="w-[30px]" />
         </a>
 
-        <ul className="min-h-[80%] flex flex-col justify-center items-center gap-y-5 text-[22px] text-white">
+        <ul className="min-h-[80%] flex flex-col justify-center items-center gap-y-5 text-[19px] text-white">
           <li className="px-2 py-1">
             <Link href="/">
               Home

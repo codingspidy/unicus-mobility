@@ -2,7 +2,7 @@ import Advantages from "./components/Advantages"
 import CostCalculator from "./components/CostCalculator"
 import Hero from "./components/Hero"
 import Payment from "./components/Payment"
-import ProductView from "./components/ProductView2"
+import ProductView from "./components/ProductView"
 import TestimonialsSlider from "./components/Testimonials"
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
               <div className="md:flex gap-x-4">
                 <label className="block mb-4 w-full">
                   <input
-                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                    className="placeholder:text-[#646464] block w-full bg-[#0d0d0d] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
                     placeholder="Your Name"
                     type="text"
                   />
@@ -38,7 +38,7 @@ export default function Home() {
                 <label className="block mb-4 w-full">
                   <input
 
-                    className="placeholder:text-[#646464] block w-full bg-[#1e1e1e] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
+                    className="placeholder:text-[#646464] block w-full bg-[#0d0d0d] rounded-md py-3 pl-3 pr-3 shadow-sm focus:outline-none focus:border-sky-500"
                     placeholder="Email"
                     type="email"
                   />
