@@ -25,16 +25,16 @@ const Navbar: NextComponentType = () => {
             <div className="inline-flex items-center">
               <div className="lg:block hidden">
                 <ul className="flex items-center gap-x-5 text-[15px] text-white">
-                  <li className="px-2 py-1">
+                  <li className="px-2 py-2">
                     <Link href="/">
                       Home
                     </Link>
                   </li>
-                  <li className="px-2 py-1 group relative">
+                  <li className="px-2 py-2 group relative">
                     Book/Rent
                     <div
                       className={
-                        `hidden hover:block group-hover:block bg-white absolute top-[30px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                        `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                       }
                       style={{ minWidth: "12rem" }}
                     >
@@ -67,13 +67,13 @@ const Navbar: NextComponentType = () => {
                       </a>
                     </div>
                   </li>
-                  <li className="px-2 py-1 relative group">
+                  <li className="px-2 py-2 relative group">
                     <Link href="/about">
                       About
                     </Link>
                     <div
                       className={
-                        `hidden hover:block group-hover:block bg-white absolute top-[30px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                        `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                       }
                       style={{ minWidth: "12rem" }}
                     >
@@ -115,11 +115,11 @@ const Navbar: NextComponentType = () => {
                       </a>
                     </div>
                   </li>
-                  <li className="px-2 py-1 relative group">
+                  <li className="px-2 py-2 relative group">
                     Explore
                     <div
                       className={
-                        `hidden hover:block group-hover:block bg-white absolute top-[30px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                        `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                       }
                       style={{ minWidth: "12rem" }}
                     >
@@ -168,7 +168,7 @@ const Navbar: NextComponentType = () => {
                       </a>
                     </div>
                   </li>
-                  <li className="px-2 py-1 cursor-pointer">
+                  <li className="px-2 py-2 cursor-pointer">
                     <Link href="/contact">
                       Contact
                     </Link>

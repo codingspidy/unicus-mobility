@@ -23,10 +23,10 @@ export default function ProductView() {
                 <div className="absolute w-full h-full inset-0 z-40 bg-black/50"></div>
                 <div className="overlay-gradient-b-intro absolute inset-0 z-50" />
 
-                <div className="w-full px-7 absolute z-[60] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                    <div className="w-fit mx-auto">
+                <div className="w-full px-7 absolute z-[60] top-[40%] md:top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+                    <div className="w-fit mx-auto text-center md:text-left">
                         <h3 className="text-white text-[36px] md:text-[45px] font-semibold leading-none">Design meets performance.</h3>
-                        <p className="text-white text-lg md:text-2xl mt-2">For your Rorring rides</p>
+                        <p className="text-white text-[18px] md:text-2xl mt-2">For your Rorring rides</p>
                     </div>
                 </div>
                 <div className="absolute z-[60] inset-x-0 bottom-20">
@@ -71,7 +71,7 @@ export default function ProductView() {
                     <SwiperSlide>
                         <div className="relative">
                             <Image
-                                className="w-full h-screen object-cover object-top"
+                                className="w-full h-screen product-image object-cover object-top"
                                 src={slide1}
                                 alt=""
                             />
@@ -80,7 +80,7 @@ export default function ProductView() {
                     <SwiperSlide>
                         <div className="relative">
                             <Image
-                                className="w-full h-screen object-cover object-top"
+                                className="w-full h-screen product-image object-cover object-top"
                                 src={slide2}
                                 alt=""
                             />
@@ -89,7 +89,7 @@ export default function ProductView() {
                     <SwiperSlide>
                         <div className="relative">
                             <Image
-                                className="w-full h-screen object-cover object-top"
+                                className="w-full h-screen product-image object-cover object-top"
                                 src={slide3}
                                 alt=""
                             />

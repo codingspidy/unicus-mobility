@@ -11,28 +11,27 @@ import Image from "next/image";
 const reviewsData = [
     {
         id: 1,
-        name: "Harry, New Delhi",
+        name: "Kunal Kumar (Director, Modern Bazaar)",
         review:
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
+            "We recently purchased electric bikes from Unicus Mobility for our delivery fleet, and we couldn't be happier with our decision. The entire experience, from browsing their website to taking delivery, was smooth and hassle-free."
     },
     {
         id: 2,
-        name: "Hermione, Punjab",
+        name: "Dr Noor Khan (Professor, JMI)",
         review:
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
+            "I wanted to express my sincere appreciation to Unicus Mobility for their exceptional work in battery manufacturing for our project. The batteries they manufactured have been crucial to the success of our project, and we are grateful for their outstanding work."
     },
     {
         id: 3,
-        name: "Snape, Kashmir",
+        name: "Chirag Tyagi",
         review:
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
+            "The customer service at Unicus Mobility is outstanding. They were incredibly helpful and responsive throughout the purchasing process and were always available to answer any questions I had. They truly exceeded my expectation."
     },
     {
         id: 4,
-        name: "Sirius, Jharkhand",
+        name: "Mohd Faazil",
         review:
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
-    },
+        "The bike is simply fantastic. It's well-built, easy to ride, and incredibly smooth and quiet. The pedal assist is a game-changer. The battery life is impressive, and I've been able to go on long rides without worrying about running out of power."    },
     {
         id: 5,
         name: "Voldemort, Kerala",
@@ -48,7 +47,7 @@ export default function TestimonialsSlider() {
                 <h3 className="text-[27px] md:text-[36px] text-black font-[600] leading-normal text-center max-w-[600px] mx-auto mb-12">Here&#39;s what our bikers are saying about us</h3>
                 <Swiper
                     modules={[Autoplay, Pagination, Navigation]}
-                    className=""
+                    className="testimonials-swiper"
                     slidesPerView={1}
                     spaceBetween={20}
                     autoplay={{

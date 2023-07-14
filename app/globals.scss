@@ -184,13 +184,19 @@ footer {
 }
 @media (min-height: 700px) {
   #custom-video {
-    height: 700px !important;
+    height: 650px !important;
   }
   .video-container {
-    height: 700px !important;
+    height: 650px !important;
   }
   .hero-video {
-    height: 700px !important;
+    height: 650px !important;
+  }
+  #product {
+    height: 650px !important;
+    .product-image {
+      height: 650px !important;
+    }
   }
 }
 @media (min-width: 1280px) and (min-height: 800px) {
@@ -202,6 +208,12 @@ footer {
   }
   .hero-video {
     height: 800px !important;
+  }
+  #product {
+    height: 800px !important;
+    .product-image {
+      height: 800px !important;
+    }
   }
 }
 
@@ -239,6 +251,11 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 16px;
   }
+}
+
+.testimonials-slider {
+  display: grid !important;
+  grid-auto-flow: column !important;
 }
 
 #footer {
