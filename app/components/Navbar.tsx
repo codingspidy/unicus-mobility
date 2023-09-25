@@ -20,7 +20,7 @@ const Navbar: NextComponentType = () => {
         <div className="innerDiv mx-auto">
           <nav className="flex justify-between lg:items-center">
             <a className="inline-block py-4">
-              <Image src={UnicusLogo} alt="" width={1116} height={1118} className="object-cover w-[45px] md:w-[60px]" />
+              <Image src={UnicusLogo} alt="" width={1116} height={1118} className="object-cover w-[60px] md:w-[75px]" />
             </a>
             <div className="inline-flex items-center">
               <div className="lg:block hidden">
@@ -30,7 +30,7 @@ const Navbar: NextComponentType = () => {
                       Home
                     </Link>
                   </li>
-                  <li className="px-2 py-2 group relative">
+                  {/* <li className="px-2 py-2 group relative">
                     Book/Rent
                     <div
                       className={
@@ -66,12 +66,12 @@ const Navbar: NextComponentType = () => {
                         Fleeting
                       </a>
                     </div>
-                  </li>
+                  </li> */}
                   <li className="px-2 py-2 relative group">
                     <Link href="/about">
                       About
                     </Link>
-                    <div
+                    {/* <div
                       className={
                         `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
                       }
@@ -113,7 +113,7 @@ const Navbar: NextComponentType = () => {
                       >
                         Gallery
                       </a>
-                    </div>
+                    </div> */}
                   </li>
                   <li className="px-2 py-2 relative group">
                     Explore
@@ -132,7 +132,7 @@ const Navbar: NextComponentType = () => {
                       >
                         Blog
                       </a>
-                      <a
+                      {/* <a
                         href="#pablo"
                         className={
                           "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
@@ -140,8 +140,8 @@ const Navbar: NextComponentType = () => {
                         onClick={(e) => e.preventDefault()}
                       >
                         Skill Development
-                      </a>
-                      <a
+                      </a> */}
+                      {/* <a
                         href="#pablo"
                         className={
                           "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
@@ -149,7 +149,7 @@ const Navbar: NextComponentType = () => {
                         onClick={(e) => e.preventDefault()}
                       >
                         Flagship 3-wheeler
-                      </a>
+                      </a> */}
                       <a
                         className={
                           "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
@@ -158,14 +158,14 @@ const Navbar: NextComponentType = () => {
                       >
                         Careers
                       </a>
-                      <a
+                      {/* <a
                         className={
                           "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
                         }
                         onClick={(e) => e.preventDefault()}
                       >
                         Initiatives
-                      </a>
+                      </a> */}
                     </div>
                   </li>
                   <li className="px-2 py-2 cursor-pointer">

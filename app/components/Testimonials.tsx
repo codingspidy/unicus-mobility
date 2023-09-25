@@ -31,18 +31,19 @@ const reviewsData = [
         id: 4,
         name: "Mohd Faazil",
         review:
-        "The bike is simply fantastic. It's well-built, easy to ride, and incredibly smooth and quiet. The pedal assist is a game-changer. The battery life is impressive, and I've been able to go on long rides without worrying about running out of power."    },
-    {
-        id: 5,
-        name: "Voldemort, Kerala",
-        review:
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
+        "The bike is simply fantastic. It's well-built, easy to ride, and incredibly smooth and quiet. The pedal assist is a game-changer. The battery life is impressive, and I've been able to go on long rides without worrying about running out of power."    
     },
+    // {
+    //     id: 5,
+    //     name: "Voldemort, Kerala",
+    //     review:
+    //         "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available",
+    // },
 ];
 
 export default function TestimonialsSlider() {
     return (
-        <section className='pt-[30px] pb-[70px] bg-[#ffffff]'>
+        <section className='pt-[30px] md:pt-[70px] pb-[70px] bg-[#ffffff]'>
             <div className='innerDiv mx-auto'>
                 <h3 className="text-[27px] md:text-[36px] text-black font-[600] leading-normal text-center max-w-[600px] mx-auto mb-12">Here&#39;s what our bikers are saying about us</h3>
                 <Swiper

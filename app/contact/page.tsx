@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons' 
 
 const Contact: NextPage = () => {
     const [firstName, setFirstName] = useState<string>('');
@@ -94,14 +95,13 @@ const Contact: NextPage = () => {
                                             <span className='ml-3 md:text-lg text-base font-medium'>+91 9718122534</span>
                                         </a>
                                     </li>
-                                    {/* <li className=''>
-                                    <a href='tel:8147354051' className='flex items-center'>
-                                        <span className='flex items-center justify-center bg-[#ECF8F9] md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
-                                            <i className='far fa-phone text-black'></i>
-                                        </span>
-                                        <span className='ml-3 md:text-lg text-base  font-medium'>9119145922</span>
-                                    </a>
-                                </li> */}
+                                    <li className='mb-4'>
+                                        <a className='flex items-center'>
+                                            <span className='flex items-center justify-center bg-[#ECF8F9] md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
+                                                <FontAwesomeIcon className="text-primary" icon={faWhatsapp} />                                            </span>
+                                            <span className='ml-3 md:text-lg text-base font-medium'>+91 9718122534</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -197,7 +197,7 @@ const Contact: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative h-[350px] w-full overflow-hidden">
+                <div className="relative h-[300px] w-full overflow-hidden">
                     <div className='absolute inset-0'>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2477723793627!2d77.27780827437614!3d28.56232158726759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3b105084d47%3A0xa94c2ba607ef85af!2sUvera%20Mobility!5e0!3m2!1sen!2sin!4v1689146794346!5m2!1sen!2sin" width="1440" height="450" style={{ border: 0 }} allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>

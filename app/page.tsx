@@ -1,6 +1,7 @@
 import Advantages from "./components/Advantages"
 import CostCalculator from "./components/CostCalculator"
 import Hero from "./components/Hero"
+import Patron from "./components/Patron"
 import Payment from "./components/Payment"
 import ProductView from "./components/ProductView"
 import TestimonialsSlider from "./components/Testimonials"
@@ -12,6 +13,7 @@ export default function Home() {
       <ProductView />
       <CostCalculator />
       <Advantages />
+      <Patron />
       <TestimonialsSlider />
       <Payment />
       <div className="bg-black text-white w-full py-16 md:py-10">

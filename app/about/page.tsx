@@ -39,10 +39,10 @@ const About = () => {
                     <div className="py-20 px-4">
                         <div className="relative max-w-screen-lg mx-auto campaign-slider">
                             <div className="max-w-[950px] mx-auto">
-                                <h3 className="text-center text-3xl md:text-4xl text-secondary font-semibold mb-3">
+                                <h3 className="text-3xl md:text-4xl md:text-center text-secondary font-semibold mb-3">
                                     Services
                                 </h3>
-                                <p className='text-primary text-center font-medium md:text-lg mb-10'>
+                                <p className='text-primary font-medium md:text-lg mb-10 w-fit md:mx-auto md:text-center'>
                                     We offer a wide range of services in the EV space. 100% Made in India electric vehicles.
                                 </p>
                                 <Swiper
@@ -177,7 +177,6 @@ const About = () => {
                                     },
                                 }}
                                 autoplay
-                                loop
                             >
                                 <SwiperSlide>
                                     <Image className="mx-6 lg:mx-10 w-16 md:w-[80px] lg:w-[90px]" src={mbLogo} alt='' />

@@ -45,7 +45,7 @@ const Hero: NextComponentType = () => {
                 <p className="font-[700] text-white lg:text-[24px] md:text-[20px] text-[16px] mt-5">#SustainableFutureSimplified</p>
                 {/* <p className="text-white font-[700] sm:text-[24px] text-[14px] mb-8"><span className="text-change"></span> </p> */}
                 <div className="relative lg:w-[350px] md:w-[300px] w-[250px] mt-7">
-                  <input type={"text"} className="font-[300] text-[14px] placeholder:font-[300] py-3 md:py-4 px-5 outline-none bg-primary rounded-[8px] text-white placeholder:text-white w-full" placeholder="Enter your email id" />
+                  <input type={"text"} className="block font-[300] text-[14px] placeholder:font-[300] py-3 md:py-4 px-5 outline-none bg-primary rounded-[8px] text-white placeholder:text-white w-full" placeholder="Enter your email id" />
                   <ArrowRightIcon className="text-white absolute right-[15px] top-1/2 -translate-y-1/2 w-[30px]" />
                 </div>
                 <p className="text-[15px] text-white font-[500] mt-4">

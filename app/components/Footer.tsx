@@ -34,7 +34,7 @@ export default function Footer() {
                                         className="w-3 md:w-5"
                                     />
                                 </Link>
-                                <Link href="">
+                                <Link href="https://twitter.com/UveraMobility">
                                     <Image
                                         alt="logo"
                                         src={TwitterLogo}
@@ -43,7 +43,7 @@ export default function Footer() {
                                         className="w-5 md:w-7"
                                     />
                                 </Link>
-                                <Link href="">
+                                <Link href="https://www.youtube.com/@UveraMobility/">
                                     <Image
                                         alt="logo"
                                         src={YoutubeLogo}
@@ -52,7 +52,7 @@ export default function Footer() {
                                         className="w-5 md:w-7"
                                     />
                                 </Link>
-                                <Link href="">
+                                <Link href="http://www.instagram.com/uveramobility/">
                                     <Image
                                         alt="logo"
                                         src={InstagramLogo}
@@ -61,7 +61,7 @@ export default function Footer() {
                                         className="w-5 md:w-7"
                                     />
                                 </Link>
-                                <Link href="">
+                                <Link href="http://www.linkedin.com/company/uveramobility/">
                                     <Image
                                         alt="logo"
                                         src={LinkedinLogo}
@@ -75,11 +75,7 @@ export default function Footer() {
                         </div>
                         <div className="md:-order-10 md:w-1/2 md:pr-10 md:pt-[90px] mt-4 md:border-t border-white">
                             <p>
-                                Unicus Mobility is a startup venture that intends to improve people&#39;s
-                                access to efficient, eco-friendly, and technologically advanced mobility
-                                solutions. We are on a mission to revolutionize the world of transportation
-                                with cutting-edge electric vehicles that blend brains, brawn, and
-                                sustainability.
+                            Founded in 2023, Uvera Mobility is a Delhi-based EV startup that intends to improve people&#39;s access to efficient, eco-friendly, and technologically advanced mobility solutions. We are on a mission to revolutionize the world of transportation with cutting-edge electric vehicle solutions that blend brains, brawn, and sustainability.
                             </p>
                             {/* <p className="mt-4 md:mt-6">
                             MAD follows all financial regulations set forth for non-profits by
@@ -87,16 +83,53 @@ export default function Footer() {
                         </p> */}
                             <ul className="mt-10 space-y-3">
                                 <li className="text-xl font-bold">Contact Us</li>
-                                <li>unicusmobility@gmail.com</li>
+                                <li>hello@uveramobility</li>
                                 <li>+91 9718122534</li>
                             </ul>
                         </div>
                         <div className="md:w-1/2 md:text-right md:pt-[90px] mt-10 md:mt-4 md:border-t border-white">
                             <ul className="space-y-4">
-                                <li>Privacy Policy</li>
-                                <li>Terms & Conditions</li>
-                                <li>Cancellation & Redund Policies</li>
-                                <li>FAQs</li>
+                                <li className="">
+                                    <Link href="/">
+                                        Home
+                                    </Link>
+                                </li>
+                                <li className="relative group">
+                                    <Link href="/about">
+                                        About
+                                    </Link></li>
+                                <li className="relative group">
+                                    Explore
+                                    <div
+                                        className={
+                                            `hidden hover:block group-hover:block bg-white absolute top-[36px] left-2 text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1`
+                                        }
+                                        style={{ minWidth: "12rem" }}
+                                    >
+                                        <a
+                                            href="#pablo"
+                                            className={
+                                                "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                                            }
+                                        >
+                                            Blog
+                                        </a>
+
+
+                                        <a
+                                            className={
+                                                "text-base py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-slate-700"
+                                            }
+                                        >
+                                            Careers
+                                        </a>
+                                    </div>
+                                </li>
+                                <li className="cursor-pointer">
+                                    <Link href="/contact">
+                                        Contact
+                                    </Link>
+                                </li>
                                 {/* <li className="text-xl font-bold">Contact Us</li>
                             <li>unicusmobility@gmail.com</li>
                             <li>+91 9718122534</li> */}
