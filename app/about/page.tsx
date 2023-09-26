@@ -20,22 +20,23 @@ const About = () => {
     return (
         <>
             <section className='bg-[#ffffff] pt-[125px] sm:pt-[140px] lg:pt-[160px]'>
-                <div className="px-4">
+                <div className="px-4 pb-[70px]">
                     <div className='max-w-[900px] mx-auto'>
                         <h2 className='text-center text-[26px] md:text-[42px] font-bold text-secondary'>Who Are We</h2>
                         <h4 className="text-primary text-center font-medium md:text-lg mt-3">Charge up, go far– Sustainability in motion.</h4>
                         <p className="text-[15px] md:text-[16px] text-primary mt-4 leading-normal">
-                            Founded in 2022, Unicus Mobility is an electric vehicle startup that aims to design, develop, and manufacture state-of-the-art intelligent modern and sustainable mobility solutions. While e-bikes are not a new concept, they do represent a growing demand for new forms of transportation that are both economical and environmentally friendly. Our ideation process started when we saw logistics fleets using fuel bikes and rushing through the congested streets. Further, we observed the hassles involved in the daily commute that are faced by students and urban professionals who are looking for a simple way to get to and from work. We thought of designing e-bikes that are not just compact in size but also have a strong build; and that are not just advanced in technology, but are also in budget.</p>
-                        <p className="text-[15px] md:text-[16px] text-primary mt-3 leading-normal">We envision green mobility to be a reality, with all the vehicles on the road using sustainable methods for running. Now the industry is decentralizing, and we want to make an impact by using advanced technology and perpetual innovation.</p>
-                        <p className="text-[15px] md:text-[16px] text-primary mt-3 leading-normal">We are proud to be offering cutting-edge technological solutions for the retrofitting of two-wheelers.</p>
+                            Founded in 2023, Uvera Mobility is a Delhi-based EV startup that intends to improve people&#39;s access to efficient, eco-friendly, and technologically advanced mobility solutions. We are on a mission to revolutionize the world of transportation with cutting-edge electric vehicle solutions that blend brains, brawn, and sustainability.
+                        </p>
+                        <p className="text-[15px] md:text-[16px] text-primary mt-5 font-semibold leading-normal">Vision: Enabling Generations to Drive Sustainably</p>
+                        <p className="text-[15px] md:text-[16px] text-primary mt-5 leading-normal">Because a chain is only as strong as its weakest link, we are overhauling the entire process, from design and production to retail and e-commerce, all the way to problem-solving and reshaping service. In the spirit of aligning ourselves with the government&#39;s aim of making India self-reliant (called &#34;Aatma Nirbhar Bharat&#34;), Uvera Mobility intends to establish itself as a pivotal hub in the EV ecosystem, wherein it facilitates the development of smart mobility solutions, the proliferation of EV-specific training opportunities for technicians and engineers, and the consolidation of EV-specific learning materials for consumers. With this, we want to contribute our part in shaping India’s EV industry.</p>
                     </div>
                 </div>
 
-                <div className='theme-gradient px-4 mt-20 flex flex-col items-center'>
+                {/* <div className='theme-gradient px-4 mt-20 flex flex-col items-center'>
                     <Image src={UnicusLogo} className='w-[250px] md:w-[400px] mx-auto' alt="" />
                     <h4 className='text-lg md:text-2xl text-white -translate-y-[80px] md:-translate-y-[120px]'>#SustainableFutureSimplified</h4>
-                </div>
-                <section>
+                </div> */}
+                {/* <section>
                     <div className="py-20 px-4">
                         <div className="relative max-w-screen-lg mx-auto campaign-slider">
                             <div className="max-w-[950px] mx-auto">
@@ -145,19 +146,11 @@ const About = () => {
                             ></button>
                         </div>
                     </div>
-                </section>
-                <div className='py-20'>
+                </section> */}
+                {/* <div className='py-20'>
                     <div className='innerDiv mx-auto'>
                         <h3 className="text-center text-secondary text-3xl md:text-4xl font-bold">Clients</h3>
-                        {/* <div className="overflow-x-scroll scrollbar-hide">
-                            <div className="mt-12 flex items-center md:justify-center gap-12 md:gap-16">
-                                <Image src={mbLogo} alt="" />
-                                <Image src={DominosLogo} alt="" />
-                                <Image src={jmiLogo} alt="" />
-                                <Image src={CartLogo} alt="" />
-                                <Image src={SaeLogo} alt="" />
-                            </div>
-                        </div> */}
+                        
                         <div id="clientsSlider" className='mt-12 w-fit mx-auto'>
                             <Swiper
                                 className=''
@@ -202,7 +195,7 @@ const About = () => {
                             <p className="text-primary leading-normal mt-2">We concentrate on bringing awareness of EVs and their sustainability to a wide audience, including high school and college students as well as members of the public and business sectors. We host free-of-cost webinars and workshops on EV technology and maintenance for the general public and potential EV owners.   We frequently collaborate with educational institutions to provide teachers and students EV education and training. We emphasise the value of sustainability to our customers and staff, encouraging them to make more eco-friendly decisions in both their personal and professional life. One of our teams is involved in curating online courses and tutorials on EV technology, charging infrastructure, and related topics. We establish partnerships with local governments and organizations to promote EV adoption and provide education and resources to underserved communities.</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="bg-black text-white w-full px-4 lg:px-0 py-16 md:py-20">
                     <div className="max-w-[900px] mx-auto">
                         <div className="">

@@ -1,21 +1,61 @@
+import Image from "next/image"
 import Advantages from "./components/Advantages"
+import ConnectionForm from "./components/ConnectionForm"
 import CostCalculator from "./components/CostCalculator"
 import Hero from "./components/Hero"
 import Patron from "./components/Patron"
 import Payment from "./components/Payment"
 import ProductView from "./components/ProductView"
 import TestimonialsSlider from "./components/Testimonials"
+import UnicusLogo from "./images/logo/2.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import InvestorForm from "./components/InvestorForm"
 
 export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       <Hero />
-      <ProductView />
-      <CostCalculator />
+      {/* <ProductView /> */}
+      <ConnectionForm />
+      {/* <CostCalculator /> */}
       <Advantages />
       <Patron />
-      <TestimonialsSlider />
-      <Payment />
+      <section className="bg-secondary py-[60px] text-center">
+        <div className="innerDiv">
+          <Image src={UnicusLogo} className='w-[250px] md:w-[300px] mx-auto' alt="" />
+          <h4 className='text-xl md:text-3xl font-medium text-white mt-7'>Bringing eco-conscious transportation for everyone. STAY TUNED!</h4>
+          <div className="flex items-center justify-center gap-x-2 text-white text-lg mt-2">
+            <span>hello@uveramobility.com</span>
+            <span>|</span>
+            <span>+91 97181 22534</span>
+          </div>
+          <p className="mt-5 text-[15px]">On our way to creating a brand that exceeds customer expectations, promotes sustainable practices, aligns with the government&#39;s aim of making India self-reliant, reaches the pinnacle of scalability, and emerges as a pivotal hub in the ecosystem.</p>
+          <div className="flex justify-center items-center gap-12 flex-wrap mt-10">
+            <button type='submit' className='bg-white text-black w-full sm:w-1/2 lg:w-1/3 max-w-[300px] font-semibold rounded-full py-3 flex items-center justify-center relative'> { /* onClcik={handleContact} disabled={loading} */}
+              JOIN CONNECTED
+              <span className="w-10 h-10 rounded-full bg-black absolute top-[4px] right-1">
+                <FontAwesomeIcon className="h-4 text-secondary mt-[10px]" icon={faArrowUp} />
+              </span>
+            </button>
+            <button type='submit' className='bg-white text-black w-full sm:w-1/2 lg:w-1/3 max-w-[300px] font-semibold rounded-full py-3 flex items-center justify-center relative'> { /* onClcik={handleContact} disabled={loading} */}
+              KNOW US BETTER
+              <span className="w-10 h-10 rounded-full bg-black absolute top-[4px] right-1">
+                <FontAwesomeIcon className="h-4 text-secondary mt-[10px]" icon={faArrowRight} />
+              </span>
+            </button>
+            <button type='submit' className='bg-white text-black w-full sm:w-1/2 lg:w-1/3 max-w-[300px] font-semibold rounded-full py-3 flex items-center justify-center relative'> { /* onClcik={handleContact} disabled={loading} */}
+              JOIN US AS AN INVESTOR
+              <span className="w-10 h-10 rounded-full bg-black absolute top-[4px] right-1">
+                <FontAwesomeIcon className="h-4 text-secondary mt-[10px]" icon={faArrowDown} />
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      {/* <TestimonialsSlider /> */}
+      {/* <Payment /> */}
+      <InvestorForm />
       <div className="bg-black text-white w-full py-16 md:py-10">
         <div className="innerDiv">
           <div className="md:grid grid-cols-2 gap-5">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import UnicusLogo from "../images/unicus-logo.png"
+import UnicusLogo from "../images/logo/3.png"
 import FacebookLogo from "../images/facebook.svg"
 import InstagramLogo from "../images/instagram.svg"
 import TwitterLogo from "../images/twitter.svg"
@@ -89,11 +89,6 @@ export default function Footer() {
                         </div>
                         <div className="md:w-1/2 md:text-right md:pt-[90px] mt-10 md:mt-4 md:border-t border-white">
                             <ul className="space-y-4">
-                                <li className="">
-                                    <Link href="/">
-                                        Home
-                                    </Link>
-                                </li>
                                 <li className="relative group">
                                     <Link href="/about">
                                         About
@@ -138,7 +133,7 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-col gap-y-1 items-center footer-links mt-20 md:mt-10 text-[10px] md:text-xs">
-                        <div className="">Unicus Mobility Pvt. Ltd., New Delhi, India</div>
+                        <div className="">Uvera Mobility Pvt. Ltd., New Delhi, India</div>
                         <div className="text-base md:text-lg font-[600]">Proudly curated with⚡in India</div>
                         <div>©2023 All Rights Reserved</div>
                     </div>

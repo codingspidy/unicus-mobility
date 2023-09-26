@@ -19,9 +19,9 @@ const Patron: NextComponentType = () => {
 
 
     return (
-        <section id="patronSection" className={`section pt-10 pb-7 md:pt-16 md:pb-10`}>
+        <section id="patronSection" className={`section pt-10 pb-7 md:pb-10`}>
             <div className='innerDiv mx-auto'>
-                <h3 className='text-center sm:text-3xl text-2xl text-black font-[600] mb-[20px] md:text-4xl'>Patron Members</h3>
+                <h3 className='text-center sm:text-3xl text-2xl text-black font-[600] mb-[20px] md:text-4xl'>Recognised By</h3>
                 <div className=''>
                     <Swiper
                         className='mySwiper'

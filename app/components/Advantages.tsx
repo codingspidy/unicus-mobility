@@ -16,7 +16,7 @@ import six from "../images/support/6.png"
 
 const Advantages = () => {
     return (
-        <section className='pt-[50px] pb-[100px] bg-[#ffffff]'>
+        <section className='pt-[50px] pb-[70px] bg-[#ffffff]'>
             <div className='innerDiv mx-auto'>
                 <h3 className="text-[27px] md:text-[36px] font-[600] text-center mx-auto max-w-[290px] md:max-w-none">Support the <span className="text-secondary">Cause</span>, Choose <span className="text-secondary">Electric</span></h3>
                 <div className="flex items-baseline justify-center md:justify-between mt-12 gap-x-4 md:gap-x-0 gap-y-7 flex-wrap">

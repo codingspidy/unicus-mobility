@@ -4,7 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Bars3Icon as MenuIcon, XMarkIcon as CloseIcon } from "@heroicons/react/24/solid"
-import UnicusLogo from "../images/unicus-logo.png"
+import UnicusLogo from "../images/logo/1.png"
+import FacebookLogo from "../images/facebook.svg"
+import InstagramLogo from "../images/instagram.svg"
+import TwitterLogo from "../images/twitter.svg"
+import LinkedinLogo from "../images/linkedin.svg"
+import YoutubeLogo from "../images/youtube.svg"
 
 const Navbar: NextComponentType = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,17 +24,17 @@ const Navbar: NextComponentType = () => {
       <header id="navbar" className={scroll ? "fixed w-full top-0 z-[99] header-fixed transition-all ease-in-out" : "fixed w-full top-0 z-[99] transition-all ease-in-out"}>
         <div className="innerDiv mx-auto">
           <nav className="flex justify-between lg:items-center">
-            <a className="inline-block py-4">
-              <Image src={UnicusLogo} alt="" width={1116} height={1118} className="object-cover w-[60px] md:w-[75px]" />
-            </a>
+            <Link href="/" className="inline-block py-4">
+              <Image src={UnicusLogo} alt="" className="object-cover w-[130px] md:w-[170px]" />
+            </Link>
             <div className="inline-flex items-center">
               <div className="lg:block hidden">
                 <ul className="flex items-center gap-x-5 text-[15px] text-white">
-                  <li className="px-2 py-2">
+                  {/* <li className="px-2 py-2">
                     <Link href="/">
                       Home
                     </Link>
-                  </li>
+                  </li> */}
                   {/* <li className="px-2 py-2 group relative">
                     Book/Rent
                     <div
@@ -185,6 +190,45 @@ const Navbar: NextComponentType = () => {
                 <MenuIcon className="w-[27px] text-white" />
               </a>
             </div>
+            <div className="hidden gap-5 items-center md:flex">
+              <Link href="">
+                <Image
+                  alt="logo"
+                  src={FacebookLogo}
+                  width={18}
+                  height={18}
+                  className="w-3"
+                />
+              </Link>
+              
+              <Link href="https://www.youtube.com/@UveraMobility/">
+                <Image
+                  alt="logo"
+                  src={YoutubeLogo}
+                  width={18}
+                  height={18}
+                  className="w-5"
+                />
+              </Link>
+              <Link href="http://www.instagram.com/uveramobility/">
+                <Image
+                  alt="logo"
+                  src={InstagramLogo}
+                  width={18}
+                  height={18}
+                  className="w-5"
+                />
+              </Link>
+              <Link href="http://www.linkedin.com/company/uveramobility/">
+                <Image
+                  alt="logo"
+                  src={LinkedinLogo}
+                  width={18}
+                  height={18}
+                  className="w-5"
+                />
+              </Link>
+            </div>
           </nav>
         </div>
       </header>
@@ -200,12 +244,12 @@ const Navbar: NextComponentType = () => {
         </a>
 
         <ul className="min-h-[80%] flex flex-col justify-center items-center gap-y-5 text-[19px] text-white">
-          <li className="px-2 py-1">
+          {/* <li className="px-2 py-1">
             <Link href="/">
               Home
             </Link>
-          </li>
-          <li className="px-2 py-1 relative">
+          </li> */}
+          {/* <li className="px-2 py-1 relative">
             Book/Rent
             <div
               className={
@@ -241,7 +285,7 @@ const Navbar: NextComponentType = () => {
                 Something else here
               </a>
             </div>
-          </li>
+          </li> */}
           <li className="px-2 py-1">
             <Link href="/about">
               About
