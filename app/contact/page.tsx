@@ -84,7 +84,7 @@ const Contact: NextPage = () => {
                                             <span className='flex items-center justify-center bg-[#ECF8F9] md:h-12 md:w-12 w-9 h-9 rounded-full md:text-xl text-sm'>
                                                 <FontAwesomeIcon className="text-primary" icon={faEnvelope} />
                                             </span>
-                                            <span className='ml-3 md:text-lg text-base font-medium'>unicusmobility@gmail.com</span>
+                                            <span className='ml-3 md:text-lg text-base font-medium'>hello@uveramobility.com</span>
                                         </a>
                                     </li>
                                     <li className='mb-4'>

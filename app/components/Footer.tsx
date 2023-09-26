@@ -83,7 +83,7 @@ export default function Footer() {
                         </p> */}
                             <ul className="mt-10 space-y-3">
                                 <li className="text-xl font-bold">Contact Us</li>
-                                <li>hello@uveramobility</li>
+                                <li>hello@uveramobility.com</li>
                                 <li>+91 9718122534</li>
                             </ul>
                         </div>
